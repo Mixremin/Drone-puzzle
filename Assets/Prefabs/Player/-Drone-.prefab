@@ -95,7 +95,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerCam: {fileID: 0}
-  laserOrigin: {fileID: 1104240925833408804}
+  laserOrigin: {fileID: 5060514364108518160}
+  originOffset: {x: 0, y: -0.1, z: 0}
   laserPrefab: {fileID: 5789850384244592336, guid: 7cfcd778b938cc14cafb6929fe253d2c, type: 3}
   maxLaserRange: 10
   laserTravelSpeed: 0.1
