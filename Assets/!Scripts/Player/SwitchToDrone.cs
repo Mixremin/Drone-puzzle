@@ -23,6 +23,9 @@ namespace Player
         [SerializeField]
         private FirstPersonMovement fpMovement;
 
+        [SerializeField]
+        private float timeSlow = 3f;
+
         public KeyCode SwitchKey = KeyCode.F;
 
         private bool isDroning = false;
@@ -40,6 +43,8 @@ namespace Player
             {
                 if (!isDroning)
                 {
+                    Time.timeScale = 1 / timeSlow;
+
                     playerCam.SetActive(false);
                     ShowInTPS();
                     droneCam.SetActive(true);
@@ -51,6 +56,8 @@ namespace Player
                 }
                 else
                 {
+                    Time.timeScale = 1f;
+
                     droneCam.SetActive(false);
                     HideInFPS();
                     playerCam.SetActive(true);
