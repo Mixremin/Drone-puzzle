@@ -1,4 +1,5 @@
-﻿using Config;
+﻿using _Drone.LaserObj;
+using Config;
 using System.Collections;
 using UnityEngine;
 
@@ -7,20 +8,19 @@ namespace _Drone
     [AddComponentMenu("Scripts/_Drone/_Drone.ShootLaser")]
     internal class ShootLaser : MonoBehaviour
     {
+        [Header("Laser Objects")]
         [SerializeField]
-        private Camera playerCamera;
+        private Camera playerCam;
 
         [SerializeField]
         private Transform laserOrigin;
 
         [SerializeField]
-        private KeyCode shootButton = KeyCode.Mouse0;
+        private GameObject laserPrefab;
 
+        [Header("Parameters")]
         [SerializeField]
-        private float gunRange = 50f;
-
-        [SerializeField]
-        private LineRenderer laserRenderer;
+        private float maxLaserRange = 10f;
 
         [SerializeField]
         private float laserTravelSpeed = 5f;
@@ -28,8 +28,19 @@ namespace _Drone
         [SerializeField]
         private float laserTravelRate = 1f;
 
+        [SerializeField]
+        private float collisionRangeOffset = 0.1f;
+
+        [Header("Controls")]
+        [SerializeField]
+        private KeyCode shootButton = KeyCode.Mouse0;
+
         private bool beaming = false;
         private float laserEndRange = 1f;
+        private GameObject laserObj;
+        private LineRenderer laserRenderer;
+        private bool laserImpacting = false;
+        private bool canLaserGrow = true;
 
         private void Update()
         {
@@ -43,67 +54,83 @@ namespace _Drone
                 if (Input.GetKeyUp(shootButton))
                 {
                     StopShooting();
-
                 }
-
             }
         }
 
         private void ProcessShooting()
         {
-            laserRenderer.SetPosition(0, laserOrigin.position);
             if (!beaming)
             {
                 _ = StartCoroutine(laserRangeRoutine());
+                laserObj = Instantiate(laserPrefab);
+                laserRenderer = laserObj.GetComponent<LineRenderer>();
+
                 laserRenderer.SetPosition(1, laserOrigin.position);
                 beaming = true;
+                laserRenderer.enabled = true;
+
             }
+            laserRenderer.SetPosition(0, laserOrigin.position);
+            Vector3 rayOrigin = playerCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+            float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
+            Vector3 lineDirection = laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0);
 
-            Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
-            //if (Physics.Raycast(rayOrigin, playerCamera.transform.forward, out RaycastHit hit, gunRange))
-            //{
-            //    laserRenderer.SetPosition(1, hit.point);
-            //    Debug.Log(hit.transform.gameObject);
-            //}
-            //else
-            //{
 
-            laserRenderer.SetPosition(1, rayOrigin + (playerCamera.transform.forward * laserEndRange));
-            //}
+            if (Physics.Raycast(laserRenderer.GetPosition(0), lineDirection, out RaycastHit hit, lineMagnitude))
+            {
+                canLaserGrow = false;
 
-            laserRenderer.enabled = true;
+                float newLaserMagnitude = (hit.point - laserRenderer.GetPosition(0)).magnitude;
+                if (laserEndRange - newLaserMagnitude > collisionRangeOffset)
+                {
+                    laserEndRange = newLaserMagnitude;
+                }
+
+                if (!laserImpacting)
+                {
+                    _ = StartCoroutine(laserImpactRoutine(hit));
+                }
+            }
+            else
+            {
+                canLaserGrow = true;
+            }
+            laserRenderer.SetPosition(1, rayOrigin + (laserOrigin.transform.forward * laserEndRange));
         }
 
         private IEnumerator laserRangeRoutine()
         {
-            while (laserEndRange < gunRange)
+            while (true)
             {
                 yield return new WaitForSeconds(laserTravelRate);
-
-                laserEndRange += laserTravelSpeed;
-                Debug.Log("New end Range:" + laserEndRange);
+                if (canLaserGrow && laserEndRange < maxLaserRange)
+                {
+                    laserEndRange += laserTravelSpeed;
+                }
             }
 
+        }
+
+        private IEnumerator laserImpactRoutine(RaycastHit hit)
+        {
+
+            laserImpacting = true;
+            yield return new WaitForSeconds(0.1f);
+
+            Debug.Log(hit.transform.gameObject);
+            laserImpacting = false;
         }
 
         private void StopShooting()
         {
             StopAllCoroutines();
-            _ = StartCoroutine(laserTravelRoutine());
+            laserObj.transform.position = transform.position;
+            laserObj.transform.rotation = transform.rotation;
+            laserObj.GetComponent<LaserProjectile>().StopShooting(laserTravelRate, laserTravelSpeed);
             laserEndRange = 1f;
             beaming = false;
-        }
-
-        private IEnumerator laserTravelRoutine()
-        {
-
-            while (laserRenderer.GetPosition(1) != (playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0)) + (playerCamera.transform.forward * gunRange)))
-            {
-                yield return new WaitForSeconds(laserTravelRate);
-                laserRenderer.SetPosition(0, laserRenderer.GetPosition(0) + (playerCamera.transform.forward * laserTravelSpeed));
-                laserRenderer.SetPosition(1, laserRenderer.GetPosition(1) + (playerCamera.transform.forward * laserTravelSpeed));
-            }
-
+            laserImpacting = false;
         }
     }
 }
