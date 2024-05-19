@@ -325,7 +325,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   m_ShowDebugText: 0
   m_ShowCameraFrustum: 1
-  m_IgnoreTimeScale: 0
+  m_IgnoreTimeScale: 1
   m_WorldUpOverride: {fileID: 0}
   m_UpdateMethod: 2
   m_BlendUpdateMethod: 1
@@ -759,7 +759,11 @@ PrefabInstance:
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserRenderer
       value: 
-      objectReference: {fileID: 1995440301}
+      objectReference: {fileID: 0}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: laserTravelRate
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelTime
       value: 1
@@ -812,7 +816,8 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -1177,11 +1182,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772613030}
   m_Mesh: {fileID: 10202, guid: 0000000000000000e000000000000000, type: 0}
---- !u!120 &1995440301 stripped
-LineRenderer:
-  m_CorrespondingSourceObject: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-  m_PrefabInstance: {fileID: 1331807421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
