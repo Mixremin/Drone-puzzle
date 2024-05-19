@@ -7,7 +7,7 @@ public class RoadSpawner : MonoBehaviour
 {
 
     [SerializeField] private List<GameObject> _roads;
-    [SerializeField] private float _roadLength = 10;
+    [SerializeField] private float _roadLength = 20;
     private GameObject _road;
 
     // Start is called before the first frame update

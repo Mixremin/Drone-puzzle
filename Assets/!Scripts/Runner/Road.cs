@@ -30,7 +30,7 @@ public class Road : MonoBehaviour
     private void DestroyRoad()
     {
 
-        if (transform.position.z < -20)
+        if (transform.position.z < -30)
             Destroy(gameObject);
 
     }

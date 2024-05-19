@@ -1,7 +1,7 @@
 Shader "Custom/ASCIIPostProcessShader" {
 	Properties {
-		_MainTex ("Main Texture", 2D) = "white" {}
-    _AsciiMapTex ("ASCII Map Texture", 2D) = "white" {}
+		_MainTex ("Main Texture", 2D) = "green" {}
+    _AsciiMapTex ("ASCII Map Texture", 2D) = "green" {}
 		_AsciiMapCharacterCount ("ASCII Map Character Count", Int) = 7
 		
     _tilesX ("X OnScreen Characters", Int) = 160
