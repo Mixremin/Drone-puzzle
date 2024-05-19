@@ -828,6 +828,14 @@ PrefabInstance:
       propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
       value: 0.02189827
       objectReference: {fileID: 0}
+    - target: {fileID: 3859435400627730875, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: m_Interpolate
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3859435400627730875, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: m_CollisionDetection
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Name
       value: Player
@@ -1134,7 +1142,7 @@ BoxCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1772613030}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 305322bda6649364f88f40c2014bbac5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
