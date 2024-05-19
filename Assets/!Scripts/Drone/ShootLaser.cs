@@ -9,7 +9,10 @@ namespace _Drone
     internal class ShootLaser : MonoBehaviour
     {
         [SerializeField]
-        private Camera playerCamera;
+        private bool shootFromCamera = true;
+
+        [SerializeField]
+        private Camera playerCam;
 
         [SerializeField]
         private Transform laserOrigin;
@@ -33,6 +36,15 @@ namespace _Drone
         private float laserEndRange = 1f;
         private GameObject laserObj;
         private LineRenderer laserRenderer;
+        private bool laserImpacting = false;
+
+        private void Awake()
+        {
+            if (shootFromCamera)
+            {
+                laserOrigin = playerCam.transform;
+            }
+        }
 
         private void Update()
         {
@@ -61,16 +73,25 @@ namespace _Drone
 
                 laserRenderer.SetPosition(1, laserOrigin.position);
                 beaming = true;
+                laserRenderer.enabled = true;
             }
             laserRenderer.SetPosition(0, laserOrigin.position);
-            laserObj.transform.position = transform.position;
-            laserObj.transform.rotation = transform.rotation;
+            Vector3 rayOrigin = playerCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+            float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
+            Vector3 lineDirection = laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0);
 
-            Vector3 rayOrigin = playerCamera.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
-
-            laserRenderer.SetPosition(1, rayOrigin + (laserOrigin.transform.forward * laserEndRange));
-
-            laserRenderer.enabled = true;
+            if (Physics.Raycast(laserRenderer.GetPosition(0), lineDirection, out RaycastHit hit, lineMagnitude))
+            {
+                laserRenderer.SetPosition(1, hit.point);
+                if (!laserImpacting)
+                {
+                    _ = StartCoroutine(laserImpactRoutine(hit));
+                }
+            }
+            else
+            {
+                laserRenderer.SetPosition(1, rayOrigin + (laserOrigin.transform.forward * laserEndRange));
+            }
         }
 
         private IEnumerator laserRangeRoutine()
@@ -83,12 +104,24 @@ namespace _Drone
 
         }
 
+        private IEnumerator laserImpactRoutine(RaycastHit hit)
+        {
+            laserImpacting = true;
+            yield return new WaitForSeconds(0.1f);
+
+            Debug.Log(hit.transform.gameObject);
+            laserImpacting = false;
+        }
+
         private void StopShooting()
         {
             StopAllCoroutines();
+            laserObj.transform.position = transform.position;
+            laserObj.transform.rotation = transform.rotation;
             laserObj.GetComponent<LaserProjectile>().StopShooting(laserTravelRate, laserTravelSpeed);
             laserEndRange = 1f;
             beaming = false;
+            laserImpacting = false;
         }
     }
 }

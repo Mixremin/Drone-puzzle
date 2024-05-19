@@ -746,8 +746,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: gunRange
-      value: 5
+      value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 567855222}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: droneCamera
+      value: 
+      objectReference: {fileID: 567855222}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserOrigin
       value: 
@@ -762,11 +770,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelRate
-      value: 0.3
+      value: 0.05
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelTime
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: shootFromCamera
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelSpeed
