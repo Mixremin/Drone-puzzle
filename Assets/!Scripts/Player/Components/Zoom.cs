@@ -1,11 +1,12 @@
-﻿using UnityEngine;
+﻿using Cinemachine;
+using UnityEngine;
 
 namespace Player
 {
     [ExecuteInEditMode]
     internal class Zoom : MonoBehaviour
     {
-        private new Camera camera;
+        private new CinemachineVirtualCamera camera;
         public float defaultFOV = 60;
         public float maxZoomFOV = 15;
         [Range(0, 1)]
@@ -15,10 +16,10 @@ namespace Player
         private void Awake()
         {
             // Get the camera on this gameObject and the defaultZoom.
-            camera = GetComponent<Camera>();
+            camera = GetComponent<CinemachineVirtualCamera>();
             if (camera)
             {
-                defaultFOV = camera.fieldOfView;
+                defaultFOV = camera.m_Lens.FieldOfView;
             }
         }
 
@@ -27,7 +28,7 @@ namespace Player
             // Update the currentZoom and the camera's fieldOfView.
             currentZoom += Input.mouseScrollDelta.y * sensitivity * .05f;
             currentZoom = Mathf.Clamp01(currentZoom);
-            camera.fieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
+            camera.m_Lens.FieldOfView = Mathf.Lerp(defaultFOV, maxZoomFOV, currentZoom);
         }
     }
 }

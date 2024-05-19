@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using Config;
+using System.Collections.Generic;
 using UnityEngine;
 namespace Player
 {
@@ -9,6 +10,7 @@ namespace Player
         [Header("Running")]
         public bool canRun = true;
         public bool IsRunning { get; private set; }
+        public Transform view;
         public float runSpeed = 9;
         public KeyCode runningKey = KeyCode.LeftShift;
         private new Rigidbody rigidbody;
@@ -23,21 +25,29 @@ namespace Player
 
         private void FixedUpdate()
         {
-            // Update IsRunning from input.
-            IsRunning = canRun && Input.GetKey(runningKey);
-
-            // Get targetMovingSpeed.
-            float targetMovingSpeed = IsRunning ? runSpeed : speed;
-            if (speedOverrides.Count > 0)
+            if (!Locker.instance.MovementLocked)
             {
-                targetMovingSpeed = speedOverrides[^1]();
+                // Update IsRunning from input.
+                IsRunning = canRun && Input.GetKey(runningKey);
+
+                // Get targetMovingSpeed.
+                float targetMovingSpeed = IsRunning ? runSpeed : speed;
+                if (speedOverrides.Count > 0)
+                {
+                    targetMovingSpeed = speedOverrides[^1]();
+                }
+
+                // Get targetVelocity from input.
+                Vector2 targetVelocity = new(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+
+                // Apply movement.
+                rigidbody.velocity = view.transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
             }
+        }
 
-            // Get targetVelocity from input.
-            Vector2 targetVelocity = new(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
-
-            // Apply movement.
-            rigidbody.velocity = transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+        public void ResetVelocity()
+        {
+            rigidbody.velocity = Vector3.zero;
         }
     }
 }

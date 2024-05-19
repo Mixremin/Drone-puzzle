@@ -8,15 +8,10 @@ namespace Player
         public float sensitivity = 2;
         public float smoothing = 1.5f;
 
-        [HideInInspector]
-        public Vector2 velocity;
-        public Vector2 frameVelocity;
+        private Vector2 velocity;
 
-        private void Reset()
-        {
-            // Get the character from the FirstPersonMovement in parents.
-            character = GetComponentInParent<FirstPersonMovement>().transform;
-        }
+        private Vector2 frameVelocity;
+
 
         private void Start()
         {
