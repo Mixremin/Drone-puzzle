@@ -6,6 +6,9 @@ namespace _Drone.LaserObj
     [AddComponentMenu("Scripts/_Drone/LaserObj/_Drone.LaserObj.LaserProjectile")]
     internal class LaserProjectile : MonoBehaviour
     {
+        [SerializeField]
+        private float lifeTime = 3f;
+
         private LineRenderer laserRenderer;
 
         private void Awake()
@@ -20,14 +23,13 @@ namespace _Drone.LaserObj
         private IEnumerator laserTravelRoutine(float laserTravelRate, float laserTravelSpeed)
         {
             //TEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMP
-            int iter = 0;
-            while (iter < 6)
+            float timer = 0f;
+            while (timer < lifeTime)
             {
+                timer += Time.deltaTime;
                 yield return new WaitForSeconds(laserTravelRate);
-                iter++;
 
                 float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
-
                 if (Physics.Raycast(laserRenderer.GetPosition(0), transform.forward, out RaycastHit hit, lineMagnitude))
                 {
                     Debug.Log(hit.transform.gameObject);

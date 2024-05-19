@@ -770,7 +770,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelRate
-      value: 0.05
+      value: 0.005
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelTime
@@ -782,7 +782,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: laserTravelSpeed
-      value: 1
+      value: 0.1
+      objectReference: {fileID: 0}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: collisionRangeOffset
+      value: 0.5
       objectReference: {fileID: 0}
     - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Materials.Array.data[0]
