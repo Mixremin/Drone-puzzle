@@ -1,14 +1,12 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Road : MonoBehaviour
 {
-
-    [SerializeField] private float _speed;
+    [SerializeField]
+    private float _speed = 5f;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         DestroyRoad();
     }
@@ -31,8 +29,9 @@ public class Road : MonoBehaviour
     {
 
         if (transform.position.z < -30)
+        {
             Destroy(gameObject);
-
+        }
     }
 
 }
