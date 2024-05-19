@@ -1,89 +1,72 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
-public class CCNeonFlash : MonoBehaviour 
+namespace Assets.CyberCity.Script
 {
-    public bool IsActive;
-    [ColorUsageAttribute (true, true)]
-    public Color MaxBright;
-    public float SwitchTime = 0.1f;
-    public enum SwitchMode
+    public class CCNeonFlash : MonoBehaviour
     {
-        simple = 0,
-        multi = 1,
-        broken = 2,
-    }
-    public SwitchMode SwitchModes = SwitchMode.simple;
-    public int MatId = 1;
-    int mode;
-    int count;
-    Material _Material;
-
-    void Awake()
-    {
-        UnityEngine.Random.InitState((int)System.DateTime.Now.Ticks * 1000);
-    }
-
-	// Use this for initialization
-	void Start () 
-    {
-        if (IsActive)
+        public bool IsActive;
+        [ColorUsage(true, true)]
+        public Color MaxBright;
+        public float SwitchTime = 0.1f;
+        public enum SwitchMode
         {
-            float random = Random.Range(0.07f, 0.95f);
-            InvokeRepeating("ColorSwitch", random, SwitchTime);
-            _Material = GetComponent<Renderer>().materials[MatId];
+            simple = 0,
+            multi = 1,
+            broken = 2,
         }
-	}
-	
-	// Update is called once per frame
-	void Update () 
-    {
-		
-	}
+        public SwitchMode SwitchModes = SwitchMode.simple;
+        public int MatId = 1;
+        private int mode;
+        private int count;
+        private Material _Material;
 
-    void ColorSwitch()
-    {
-        //0 - 1 - 0 - 1 - 0...
-        if (SwitchModes == SwitchMode.simple)
+        private void Awake()
         {
-            mode = 1 - mode;
-            if (mode == 0)
+            Random.InitState((int)System.DateTime.Now.Ticks * 1000);
+        }
+
+        // Use this for initialization
+        private void Start()
+        {
+            if (IsActive)
             {
-                _Material.SetColor("_EmissiveColor", Color.black);
-            }
-            else
-            {
-                _Material.SetColor("_EmissiveColor", MaxBright);
+                float random = Random.Range(0.07f, 0.95f);
+                InvokeRepeating("ColorSwitch", random, SwitchTime);
+                _Material = GetComponent<Renderer>().materials[MatId];
             }
         }
 
-        //0 - 0.5 - 1 - 0...
-        else if (SwitchModes == SwitchMode.multi)
+        // Update is called once per frame
+        private void Update()
         {
-            mode++;
-            if (mode > 2) mode = 0;
-            if (mode == 0)
-            {
-                _Material.SetColor("_EmissiveColor", Color.black);
-            }
-            else if (mode == 1)
-            {
-                _Material.SetColor("_EmissiveColor", MaxBright / 2);
-            }
-            else
-            {
-                _Material.SetColor("_EmissiveColor", MaxBright);
-            }
+
         }
 
-        //broken lamp
-        else
+        private void ColorSwitch()
         {
-            if (count < 10)
+            //0 - 1 - 0 - 1 - 0...
+            if (SwitchModes == SwitchMode.simple)
+            {
+                mode = 1 - mode;
+                if (mode == 0)
+                {
+                    _Material.SetColor("_EmissiveColor", Color.black);
+                }
+                else
+                {
+                    _Material.SetColor("_EmissiveColor", MaxBright);
+                }
+            }
+
+            //0 - 0.5 - 1 - 0...
+            else if (SwitchModes == SwitchMode.multi)
             {
                 mode++;
-                if (mode > 2) mode = 0;
+                if (mode > 2)
+                {
+                    mode = 0;
+                }
+
                 if (mode == 0)
                 {
                     _Material.SetColor("_EmissiveColor", Color.black);
@@ -97,16 +80,45 @@ public class CCNeonFlash : MonoBehaviour
                     _Material.SetColor("_EmissiveColor", MaxBright);
                 }
             }
-            else if (count < 20)
-            {
-                _Material.SetColor("_EmissiveColor", MaxBright / 2);
-            }
+
+            //broken lamp
             else
             {
-                _Material.SetColor("_EmissiveColor", MaxBright);
+                if (count < 10)
+                {
+                    mode++;
+                    if (mode > 2)
+                    {
+                        mode = 0;
+                    }
+
+                    if (mode == 0)
+                    {
+                        _Material.SetColor("_EmissiveColor", Color.black);
+                    }
+                    else if (mode == 1)
+                    {
+                        _Material.SetColor("_EmissiveColor", MaxBright / 2);
+                    }
+                    else
+                    {
+                        _Material.SetColor("_EmissiveColor", MaxBright);
+                    }
+                }
+                else if (count < 20)
+                {
+                    _Material.SetColor("_EmissiveColor", MaxBright / 2);
+                }
+                else
+                {
+                    _Material.SetColor("_EmissiveColor", MaxBright);
+                }
+                count++;
+                if (count > 50)
+                {
+                    count = 0;
+                }
             }
-            count++;
-            if (count > 50) count = 0;
         }
     }
 }
