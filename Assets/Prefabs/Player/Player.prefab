@@ -47,7 +47,7 @@ CapsuleCollider:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8125594862222077718}
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 13400000, guid: 305322bda6649364f88f40c2014bbac5, type: 2}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -185,9 +185,9 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 6345913265466529025}
     - target: {fileID: 3090599464327608008, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
-      propertyPath: laserOrigin
+      propertyPath: playerCam
       value: 
-      objectReference: {fileID: 3406333533305570453}
+      objectReference: {fileID: 0}
     - target: {fileID: 3204564191480366422, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
       propertyPath: m_Name
       value: -Drone-
@@ -239,11 +239,6 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
---- !u!4 &3406333533305570453 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 1104240925833408804, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
-  m_PrefabInstance: {fileID: 2312236706064086449}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6753341094105582877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9056203359700629676, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}

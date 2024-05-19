@@ -18,6 +18,11 @@ public class Road : MonoBehaviour
 
     }
 
+    public void SetSpeed(float speed)
+    {
+        _speed = speed;
+    }
+
     private void Move()
     {
 
