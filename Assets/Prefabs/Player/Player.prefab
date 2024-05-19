@@ -157,6 +157,7 @@ MonoBehaviour:
   notRenderInFps:
   - {fileID: 9178685238529100562}
   fpMovement: {fileID: 7491972269619586326}
+  timeSlow: 3
   SwitchKey: 102
 --- !u!114 &7820462480737605228
 MonoBehaviour:
@@ -183,6 +184,10 @@ PrefabInstance:
       propertyPath: target
       value: 
       objectReference: {fileID: 6345913265466529025}
+    - target: {fileID: 3090599464327608008, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
+      propertyPath: laserOrigin
+      value: 
+      objectReference: {fileID: 3406333533305570453}
     - target: {fileID: 3204564191480366422, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
       propertyPath: m_Name
       value: -Drone-
@@ -234,6 +239,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
+--- !u!4 &3406333533305570453 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 1104240925833408804, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
+  m_PrefabInstance: {fileID: 2312236706064086449}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &6753341094105582877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9056203359700629676, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
@@ -295,6 +305,18 @@ PrefabInstance:
     - target: {fileID: 4207293392497186, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1506068124899978873, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2340195021461199964, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_Layer
+      value: 31
+      objectReference: {fileID: 0}
+    - target: {fileID: 2998246743711562817, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: m_Layer
+      value: 31
       objectReference: {fileID: 0}
     - target: {fileID: 3309467951574535671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: jump

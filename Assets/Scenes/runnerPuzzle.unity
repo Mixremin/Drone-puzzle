@@ -135,6 +135,7 @@ GameObject:
   - component: {fileID: 123909956}
   - component: {fileID: 123909955}
   - component: {fileID: 123909958}
+  - component: {fileID: 123909959}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -189,7 +190,7 @@ Camera:
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
-    m_Bits: 4294967295
+    m_Bits: 55
   m_RenderingPath: -1
   m_TargetTexture: {fileID: 0}
   m_TargetDisplay: 0
@@ -250,6 +251,24 @@ MonoBehaviour:
   m_CameraActivatedEvent:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &123909959
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 123909954}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb23e6c8a186a4851ae704b63b2520b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _shader: {fileID: 4800000, guid: fc927c4182df14258810e08dbb536de6, type: 3}
+  _asciiMapTexture: {fileID: 2800000, guid: 28743f524de2249439955af81c00d639, type: 3}
+  _asciiMapCharacterCount: 6
+  _tilesX: 30
+  _tilesY: 30
+  _darkness: 0.98
 --- !u!43 &170801006
 Mesh:
   m_ObjectHideFlags: 0
@@ -463,6 +482,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 123909956}
     - target: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Name
       value: Player
