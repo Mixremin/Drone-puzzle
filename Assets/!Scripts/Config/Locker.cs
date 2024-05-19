@@ -19,12 +19,13 @@ namespace Config
         public bool ShootingLocked => shootingLocked;
 
         [Button]
-        public void LockAll()
+        public void InDroneLock()
         {
             movementLocked = true;
             interactionLocked = true;
-            shootingLocked = true;
+            shootingLocked = false;
         }
+
         [Button]
         public void LockMovement()
         {
@@ -41,11 +42,11 @@ namespace Config
             shootingLocked = true;
         }
         [Button]
-        public void UnlockAll()
+        public void InFPSLock()
         {
             movementLocked = false;
             interactionLocked = false;
-            shootingLocked = false;
+            shootingLocked = true;
         }
     }
 }

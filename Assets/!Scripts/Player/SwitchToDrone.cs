@@ -44,7 +44,7 @@ namespace Player
                     ShowInTPS();
                     droneCam.SetActive(true);
 
-                    Locker.instance.LockAll();
+                    Locker.instance.InDroneLock();
                     fpMovement.ResetVelocity();
 
                     isDroning = true;
@@ -55,7 +55,7 @@ namespace Player
                     HideInFPS();
                     playerCam.SetActive(true);
 
-                    Locker.instance.UnlockAll();
+                    Locker.instance.InFPSLock();
 
                     isDroning = false;
                 }

@@ -9,7 +9,7 @@ namespace _Common
 
         private void Awake()
         {
-            Locker.instance.UnlockAll();
+            Locker.instance.InFPSLock();
         }
     }
 }
