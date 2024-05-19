@@ -513,11 +513,6 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
---- !u!4 &834568961 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3406333533305570453, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-  m_PrefabInstance: {fileID: 1331807421}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1029905364
 GameObject:
   m_ObjectHideFlags: 0
@@ -745,103 +740,14 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: gunRange
-      value: 15
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 567855222}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: droneCamera
-      value: 
-      objectReference: {fileID: 567855222}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: laserOrigin
-      value: 
-      objectReference: {fileID: 834568961}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: playerCamera
-      value: 
-      objectReference: {fileID: 567855222}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: laserRenderer
-      value: 
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: laserTravelRate
-      value: 0.005
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: laserTravelTime
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: shootFromCamera
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: laserTravelSpeed
-      value: 0.1
-      objectReference: {fileID: 0}
-    - target: {fileID: 788891750383207289, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: collisionRangeOffset
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 10306, guid: 0000000000000000f000000000000000, type: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.b
-      value: 0.7657275
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.g
-      value: 0.12641507
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key0.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.b
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.g
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.key1.r
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.colorGradient.m_ColorSpace
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].time
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Parameters.widthCurve.m_Curve.Array.data[0].value
-      value: 0.02189827
-      objectReference: {fileID: 0}
-    - target: {fileID: 3859435400627730875, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_Interpolate
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3859435400627730875, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      propertyPath: m_CollisionDetection
-      value: 1
-      objectReference: {fileID: 0}
     - target: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
-    m_RemovedComponents:
-    - {fileID: 1593226657503148135, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+    m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
