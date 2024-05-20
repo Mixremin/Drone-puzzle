@@ -3053,11 +3053,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e163752cb00cf4b8d9c7ee52f9a2b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itsPhoneText: {fileID: 1221410615}
-  interactedField: 'It''s my phone...
-
-    All accounts blocked'
-  holdTime: 3
+  canvas: {fileID: 2054304444}
+  phonePrefab: {fileID: 8632525667873900328, guid: 7f928e4f2e4b73147a92ee4fa5299520, type: 3}
 --- !u!135 &669203876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4922,6 +4919,23 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1112538094 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9048112820275943114, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+  m_PrefabInstance: {fileID: 1331807421}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1112538098
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1112538094}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1130430511
 GameObject:
   m_ObjectHideFlags: 0
@@ -5716,6 +5730,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -5723,6 +5741,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1040992197}
+    - targetCorrespondingSourceObject: {fileID: 9048112820275943114, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1112538098}
     - targetCorrespondingSourceObject: {fileID: 6544310726712660972, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 475493616}
