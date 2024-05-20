@@ -1,4 +1,5 @@
 ﻿using _Drone.LaserObj;
+using _LevelSpecific;
 using Config;
 using System.Collections;
 using UnityEngine;
@@ -121,7 +122,12 @@ namespace _Drone
             laserImpacting = true;
             yield return new WaitForSeconds(0.1f);
 
-            Debug.Log(hit.transform.gameObject);
+            if (hit.transform.TryGetComponent<IEnemy>(out IEnemy enemy))
+            {
+                enemy.TakeTick();
+                Debug.Log("Enemy Damaged(Need more smart system)");
+            }
+
             laserImpacting = false;
         }
 

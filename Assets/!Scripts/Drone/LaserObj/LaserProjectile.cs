@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using _LevelSpecific;
+using System.Collections;
 using UnityEngine;
 
 namespace _Drone.LaserObj
@@ -22,7 +23,6 @@ namespace _Drone.LaserObj
 
         private IEnumerator laserTravelRoutine(float laserTravelRate, float laserTravelSpeed)
         {
-            //TEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMPTEMP
             float timer = 0f;
             while (timer < lifeTime)
             {
@@ -32,8 +32,12 @@ namespace _Drone.LaserObj
                 float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
                 if (Physics.Raycast(laserRenderer.GetPosition(0), transform.forward, out RaycastHit hit, lineMagnitude))
                 {
-                    Debug.Log(hit.transform.gameObject);
-                    Destroy(gameObject);
+                    if (hit.transform.TryGetComponent<IEnemy>(out IEnemy enemy))
+                    {
+                        enemy.TakeTick();
+                        Debug.Log("Enemy Damaged(Need more smart system)");
+                        Destroy(gameObject);
+                    }
                     break;
                 }
                 else

@@ -1,4 +1,5 @@
 ﻿using _Items;
+using Config;
 using TMPro;
 using UnityEngine;
 
@@ -23,18 +24,21 @@ namespace _Player
 
         private void Update()
         {
-            rayOrigin = playerCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
-            Debug.DrawRay(rayOrigin, playerCam.transform.forward * interactionRange, Color.red);
-            eText.enabled = false;
-            if (Physics.Raycast(rayOrigin, playerCam.transform.forward, out RaycastHit hit, interactionRange))
+            if (!Locker.instance.InteractionLocked)
             {
-                if (hit.transform.TryGetComponent(out IInteractable item))
+                rayOrigin = playerCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+                Debug.DrawRay(rayOrigin, playerCam.transform.forward * interactionRange, Color.red);
+                eText.enabled = false;
+                if (Physics.Raycast(rayOrigin, playerCam.transform.forward, out RaycastHit hit, interactionRange))
                 {
-                    eText.enabled = true;
-                    Debug.DrawRay(rayOrigin, playerCam.transform.forward * interactionRange, Color.green);
-                    if (Input.GetKeyUp(interactionKey))
+                    if (hit.transform.TryGetComponent(out IInteractable item))
                     {
-                        item.Interact();
+                        eText.enabled = true;
+                        Debug.DrawRay(rayOrigin, playerCam.transform.forward * interactionRange, Color.green);
+                        if (Input.GetKeyUp(interactionKey))
+                        {
+                            item.Interact();
+                        }
                     }
                 }
             }
