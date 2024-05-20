@@ -48,7 +48,7 @@ MonoBehaviour:
     m_Value: 50
   meanFreePath:
     m_OverrideState: 1
-    m_Value: 200
+    m_Value: 150
   enableVolumetricFog:
     m_OverrideState: 0
     m_Value: 1
@@ -174,7 +174,7 @@ MonoBehaviour:
     m_Value: 0
   intensity:
     m_OverrideState: 1
-    m_Value: 0.511
+    m_Value: 0.3
   scatter:
     m_OverrideState: 1
     m_Value: 0.662
@@ -463,7 +463,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9008a067f4d626c4d8bc4bc48f04bb89, type: 3}
   m_Name: AmbientOcclusion
   m_EditorClassIdentifier: 
-  active: 1
+  active: 0
   quality:
     m_OverrideState: 0
     m_Value: 1
@@ -807,10 +807,10 @@ MonoBehaviour:
   active: 1
   shadows:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.8048445, z: 0.7479912, w: 0}
+    m_Value: {x: 0.99715865, y: 1, z: 0.9733637, w: 0}
   midtones:
     m_OverrideState: 1
-    m_Value: {x: 1, y: 0.98364085, z: 0.99899405, w: 0}
+    m_Value: {x: 0.9701074, y: 0.96782726, z: 1, w: 0}
   highlights:
     m_OverrideState: 0
     m_Value: {x: 1, y: 1, z: 1, w: 0}
@@ -841,10 +841,10 @@ MonoBehaviour:
   active: 1
   postExposure:
     m_OverrideState: 1
-    m_Value: 4.12
+    m_Value: 1.62
   contrast:
     m_OverrideState: 1
-    m_Value: -73
+    m_Value: -55.78
   colorFilter:
     m_OverrideState: 0
     m_Value: {r: 1, g: 1, b: 1, a: 1}
