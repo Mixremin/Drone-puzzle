@@ -10,10 +10,11 @@ namespace _Drone
         public float sensitivity = 2;
         public float smoothing = 1.5f;
 
+
+
         private Vector2 velocity;
 
         private Vector2 frameVelocity;
-
 
         private void Start()
         {
