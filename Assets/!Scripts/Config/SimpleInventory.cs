@@ -1,12 +1,11 @@
-﻿using System;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace _Config
 {
     [CreateAssetMenu(fileName = "SimpleInventory", menuName = "Config/Create SimpleInventory")]
-    internal class SimpleInventory : ScriptableSingleton<SimpleInventory>
+    internal class SimpleInventory : SingletonScriptableObject<SimpleInventory>
     {
+
         [SerializeField]
         public bool hasDrone = false;
 
