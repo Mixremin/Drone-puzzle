@@ -77,6 +77,7 @@ namespace _Drone
             }
             laserRenderer.SetPosition(0, laserOrigin.position + originOffset);
             Vector3 rayOrigin = playerCam.ViewportToWorldPoint(new Vector3(0.5f, 0.5f, 0));
+
             float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
             Vector3 lineDirection = laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0);
 
@@ -100,7 +101,7 @@ namespace _Drone
             {
                 canLaserGrow = true;
             }
-            laserRenderer.SetPosition(1, rayOrigin + ((laserOrigin.transform.forward + originOffset) * laserEndRange));
+            laserRenderer.SetPosition(1, rayOrigin + (laserOrigin.transform.forward * laserEndRange));
         }
 
         private IEnumerator laserRangeRoutine()
