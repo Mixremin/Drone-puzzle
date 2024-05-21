@@ -26,6 +26,12 @@ namespace Player
         [SerializeField]
         private float timeSlow = 3f;
 
+        [SerializeField]
+        private GameObject droneReticle;
+
+        [SerializeField]
+        private GameObject playerReticle;
+
         public KeyCode SwitchKey = KeyCode.F;
 
         private bool isDroning = false;
@@ -60,6 +66,7 @@ namespace Player
 
                     droneCam.SetActive(false);
                     HideInFPS();
+
                     playerCam.SetActive(true);
 
                     Locker.instance.InFPSLock();
@@ -72,6 +79,8 @@ namespace Player
 
         private void HideInFPS()
         {
+            playerReticle.SetActive(true);
+            droneReticle.SetActive(false);
             foreach (GameObject notRendered in notRenderInFps)
             {
                 notRendered.layer = LayerMask.NameToLayer(invisibleLayerName);
@@ -84,6 +93,8 @@ namespace Player
 
         private void ShowInTPS()
         {
+            playerReticle.SetActive(false);
+            droneReticle.SetActive(true);
             foreach (GameObject notRendered in notRenderInFps)
             {
                 notRendered.layer = 0;
