@@ -1,4 +1,5 @@
-﻿using Sirenix.OdinInspector;
+﻿using _Config;
+using Sirenix.OdinInspector;
 using UnityEngine;
 
 namespace _Items.Phone
@@ -23,6 +24,8 @@ namespace _Items.Phone
 
         public void Interact()
         {
+            SimpleInventory.instance.phoneUsed = true;
+
             phoneObject = Instantiate(phonePrefab, canvas.transform);
         }
 

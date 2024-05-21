@@ -12,7 +12,7 @@ EditorBuildSettings:
     path: Assets/Scenes/2_CyberCity.unity
     guid: 869f0820ec911c8448bd0d8c805fb683
   - enabled: 1
-    path: Assets/Scenes/runnerPuzzle.unity
+    path: Assets/Scenes/3.5_runnerPuzzle.unity
     guid: c7ef0b20e41cd1b4dba3fae12f0673aa
   - enabled: 1
     path: Assets/Scenes/SampleScene.unity

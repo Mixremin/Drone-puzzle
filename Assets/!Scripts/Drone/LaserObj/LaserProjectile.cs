@@ -8,7 +8,7 @@ namespace _Drone.LaserObj
     internal class LaserProjectile : MonoBehaviour
     {
         [SerializeField]
-        private float lifeTime = 3f;
+        private float lifeTime = 2f;
 
         private LineRenderer laserRenderer;
 
@@ -27,6 +27,7 @@ namespace _Drone.LaserObj
             while (timer < lifeTime)
             {
                 timer += Time.deltaTime;
+                Debug.Log(timer);
                 yield return new WaitForSeconds(laserTravelRate);
 
                 float lineMagnitude = (laserRenderer.GetPosition(1) - laserRenderer.GetPosition(0)).magnitude;
@@ -42,8 +43,8 @@ namespace _Drone.LaserObj
                 }
                 else
                 {
-                    laserRenderer.SetPosition(0, laserRenderer.GetPosition(0) + (transform.forward * laserTravelSpeed));
-                    laserRenderer.SetPosition(1, laserRenderer.GetPosition(1) + (transform.forward * laserTravelSpeed));
+                    laserRenderer.SetPosition(0, laserRenderer.GetPosition(0) + (transform.forward * laserTravelSpeed * Time.timeScale));
+                    laserRenderer.SetPosition(1, laserRenderer.GetPosition(1) + (transform.forward * laserTravelSpeed * Time.timeScale));
                 }
             }
             Destroy(gameObject);
