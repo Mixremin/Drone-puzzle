@@ -16,6 +16,9 @@ namespace _Config
         public bool japanGamePassed = false;
 
         [SerializeField]
+        public bool toOfficeCardObtained = false;
+
+        [SerializeField]
         public bool runnerPazzlePassed = false;
     }
 }

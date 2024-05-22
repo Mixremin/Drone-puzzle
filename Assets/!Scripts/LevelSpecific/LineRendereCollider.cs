@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using Sirenix.OdinInspector;
+using UnityEngine;
 
 namespace _LevelSpecific
 {
@@ -7,27 +8,8 @@ namespace _LevelSpecific
     internal class LineRendereCollider : MonoBehaviour
     {
         public LineRenderer Line;
-        public Vector3[] InitialState = new Vector3[1];
-        public float SmoothingLength = 2f;
-        public int SmoothingSections = 10;
 
-        //private void OnGUI()
-        //{
-        //    if (GUI.Button(new Rect(10, 60, 300, 40), "Generate Collider"))
-        //    {
-        //        GenerateMeshCollider();
-        //    }
-        //    if (GUI.Button(new Rect(10, 110, 300, 40), "Simplify Mesh"))
-        //    {
-        //        Line.Simplify(0.1f);
-        //    }
-        //}
-
-        private void Start()
-        {
-            GenerateMeshCollider();
-        }
-
+        [Button]
         public void GenerateMeshCollider()
         {
             MeshCollider collider = GetComponent<MeshCollider>();

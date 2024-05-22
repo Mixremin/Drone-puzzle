@@ -1,3 +1,4 @@
+using _Drone;
 using Config;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
@@ -22,6 +23,9 @@ namespace Player
 
         [SerializeField]
         private FirstPersonMovement fpMovement;
+
+        [SerializeField]
+        private ShootLaser shootLaser;
 
         [SerializeField]
         private float timeSlow = 3f;
@@ -49,32 +53,44 @@ namespace Player
             {
                 if (!isDroning)
                 {
-                    Time.timeScale = 1 / timeSlow;
-
-                    playerCam.SetActive(false);
-                    ShowInTPS();
-                    droneCam.SetActive(true);
-
-                    Locker.instance.InDroneLock();
-                    fpMovement.ResetVelocity();
-
-                    isDroning = true;
+                    SwitchToDroning();
                 }
                 else
                 {
-                    Time.timeScale = 1f;
-
-                    droneCam.SetActive(false);
-                    HideInFPS();
-
-                    playerCam.SetActive(true);
-
-                    Locker.instance.InFPSLock();
-
-                    isDroning = false;
+                    SwitchToFPS();
                 }
-
             }
+        }
+
+        public void SwitchToDroning()
+        {
+            Time.timeScale = 1 / timeSlow;
+
+            playerCam.SetActive(false);
+            ShowInTPS();
+            droneCam.SetActive(true);
+
+            Locker.instance.InDroneLock();
+            fpMovement.ResetVelocity();
+
+            isDroning = true;
+
+        }
+
+        public void SwitchToFPS()
+        {
+            shootLaser.StopShooting();
+
+            Time.timeScale = 1f;
+
+            droneCam.SetActive(false);
+            HideInFPS();
+
+            playerCam.SetActive(true);
+
+            Locker.instance.InFPSLock();
+
+            isDroning = false;
         }
 
         private void HideInFPS()

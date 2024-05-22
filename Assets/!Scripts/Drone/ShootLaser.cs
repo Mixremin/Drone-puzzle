@@ -132,15 +132,18 @@ namespace _Drone
             laserImpacting = false;
         }
 
-        private void StopShooting()
+        public void StopShooting()
         {
-            StopAllCoroutines();
-            laserObj.transform.position = transform.position;
-            laserObj.transform.rotation = transform.rotation;
-            laserObj.GetComponent<LaserProjectile>().StopShooting(laserTravelRate, laserTravelSpeed);
-            laserEndRange = 1f;
-            beaming = false;
-            laserImpacting = false;
+            if (laserObj != null)
+            {
+                StopAllCoroutines();
+                laserObj.transform.position = transform.position;
+                laserObj.transform.rotation = transform.rotation;
+                laserObj.GetComponent<LaserProjectile>().StopShooting(laserTravelRate, laserTravelSpeed);
+                laserEndRange = 1f;
+                beaming = false;
+                laserImpacting = false;
+            }
         }
     }
 }
