@@ -7684,25 +7684,9 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1508577571}
     m_Modifications:
-    - target: {fileID: 3414852429768851833, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
-      propertyPath: m_Materials.Array.data[0]
+    - target: {fileID: 3862230765284811496, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
+      propertyPath: lineRendereCollider
       value: 
-      objectReference: {fileID: 2100000, guid: a617aa9f3a095c748936999b49646272, type: 2}
-    - target: {fileID: 3414852429768851833, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
-      propertyPath: m_Positions.Array.data[0].y
-      value: 1.6215885
-      objectReference: {fileID: 0}
-    - target: {fileID: 3414852429768851833, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
-      propertyPath: m_Positions.Array.data[0].z
-      value: -0.7292585
-      objectReference: {fileID: 0}
-    - target: {fileID: 3414852429768851833, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
-      propertyPath: m_Positions.Array.data[1].x
-      value: 1.5041348
-      objectReference: {fileID: 0}
-    - target: {fileID: 3414852429768851833, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
-      propertyPath: m_Positions.Array.data[1].z
-      value: -1.7920933
       objectReference: {fileID: 0}
     - target: {fileID: 5347648183483424612, guid: 685ba6abf0e385141a4eaf526ad09b8e, type: 3}
       propertyPath: m_LocalPosition.x
