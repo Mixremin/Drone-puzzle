@@ -862,7 +862,7 @@ MonoBehaviour:
   drone: {fileID: 1610414973}
   switcher: {fileID: 1818797444}
   view: {fileID: 1242286501}
-  testText: {fileID: 0}
+  testText: {fileID: 129776379}
   testField: "\u0418\u0434\u0451\u0448\u044C \u0441\u043E \u043C\u043D\u043E\u0439,
     \u0434\u0440\u0443\u0436\u043E\u043A"
   holdTime: 3
