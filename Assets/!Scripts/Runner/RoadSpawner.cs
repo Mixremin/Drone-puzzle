@@ -27,7 +27,7 @@ public class RoadSpawner : MonoBehaviour
 
     public void Spawn()
     {
-
+        Debug.Log("new road spawned");
         Vector3 position = new(0, 0, _road.transform.position.z + _roadLength);
         _road = Instantiate(_roads[Random.Range(0, _roads.Count - 1)], position, Quaternion.identity);
         _road.GetComponent<Road>().SetSpeed(roadSpeed);

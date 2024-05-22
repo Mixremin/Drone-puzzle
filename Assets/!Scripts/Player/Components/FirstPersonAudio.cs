@@ -12,7 +12,7 @@ namespace Player
         public AudioSource runningAudio;
         [Tooltip("Minimum velocity for moving audio to play")]
         /// <summary> "Minimum velocity for moving audio to play" </summary>
-        public float velocityThreshold = .01f;
+        public float velocityThreshold = 1f;
         private Vector2 lastCharacterPosition;
 
         private Vector2 CurrentCharacterPosition => new(character.transform.position.x, character.transform.position.z);

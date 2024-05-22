@@ -13,7 +13,8 @@ namespace _LevelSpecific
         {
             if (transform.position.y < deathFloorHeight)
             {
-                SceneManager.LoadScene(2);
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
         }
     }

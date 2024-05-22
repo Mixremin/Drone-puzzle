@@ -1,5 +1,6 @@
 ﻿using _Config;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 namespace _LevelSpecific
 {
@@ -13,9 +14,27 @@ namespace _LevelSpecific
         private Transform secondHalfSpawnPoint;
 
         private GameObject player;
+        private int sceneNum;
         private void Start()
         {
             player = GameObject.Find("Player");
+            Scene scene = SceneManager.GetActiveScene();
+            switch (scene.buildIndex)
+            {
+                case 1:
+                    CitySpawn();
+                    break;
+                case 3:
+                    LobbySpawn();
+                    break;
+                default:
+                    Debug.Log("Invalid scene");
+                    break;
+            }
+        }
+
+        private void CitySpawn()
+        {
             if (!SimpleInventory.instance.japanGamePassed)
             {
                 player.transform.position = fistSpawnPoint.position;
@@ -23,6 +42,20 @@ namespace _LevelSpecific
             else
             {
                 player.transform.position = secondHalfSpawnPoint.position;
+            }
+        }
+
+        private void LobbySpawn()
+        {
+            if (!SimpleInventory.instance.runnerPazzlePassed)
+            {
+                player.transform.position = fistSpawnPoint.position;
+                player.transform.rotation = fistSpawnPoint.rotation;
+            }
+            else
+            {
+                player.transform.position = secondHalfSpawnPoint.position;
+                player.transform.rotation = secondHalfSpawnPoint.rotation;
             }
         }
     }
