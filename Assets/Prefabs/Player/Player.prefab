@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7820462480737605228}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -158,6 +158,8 @@ MonoBehaviour:
   - {fileID: 9178685238529100562}
   fpMovement: {fileID: 7491972269619586326}
   timeSlow: 3
+  droneReticle: {fileID: 0}
+  playerReticle: {fileID: 0}
   SwitchKey: 102
 --- !u!114 &7820462480737605228
 MonoBehaviour:
