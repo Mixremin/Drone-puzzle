@@ -1,4 +1,5 @@
-﻿using _Cutscene;
+﻿using _Config;
+using _Cutscene;
 using _LevelSpecific;
 using UnityEngine;
 
@@ -14,12 +15,15 @@ namespace _Items
         private Starter carCutscene;
         public void TakeTick()
         {
-            tickCount--;
-
-            if (tickCount <= 0)
+            if (SimpleInventory.instance.hackerQuestPassed)
             {
-                carCutscene.StartCutscene();
-                Destroy(this);
+                tickCount--;
+
+                if (tickCount <= 0)
+                {
+                    carCutscene.StartCutscene();
+                    Destroy(this);
+                }
             }
         }
     }

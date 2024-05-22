@@ -10,10 +10,19 @@ namespace _Talkable
         [SerializeField]
         private TalkableNPC talkScript;
 
+        private void Start()
+        {
+            if (SimpleInventory.instance.japanGamePassed)
+            {
+                Destroy(this);
+            }
+        }
         public void Interact()
         {
             talkScript.StartDialogue();
             SimpleInventory.instance.talkedToInformant = true;
+            //Destroy(talkScript);
+            Destroy(this);
         }
     }
 }

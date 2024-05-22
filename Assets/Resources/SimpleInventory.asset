@@ -13,5 +13,10 @@ MonoBehaviour:
   m_Name: SimpleInventory
   m_EditorClassIdentifier: 
   hasDrone: 0
+  phoneUsed: 0
+  talkedToInformant: 0
+  canStartJapanGame: 0
   japanGamePassed: 0
+  hackerQuestPassed: 0
+  toOfficeCardObtained: 0
   runnerPazzlePassed: 0
