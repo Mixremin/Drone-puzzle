@@ -1,6 +1,5 @@
 ﻿using _Config;
 using Player;
-using System;
 using System.Collections;
 using TMPro;
 using UnityEngine;
@@ -28,6 +27,7 @@ namespace _Items
 
         [SerializeField]
         private float holdTime = 3f;
+
         public void Interact()
         {
             SimpleInventory.instance.hasDrone = true;

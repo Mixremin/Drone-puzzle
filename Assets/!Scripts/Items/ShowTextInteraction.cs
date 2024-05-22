@@ -16,9 +16,20 @@ namespace _Items
 
         [SerializeField]
         private float holdTime = 3f;
+
+        private static Coroutine showTextRoutine;
         public void Interact()
         {
-            _ = StartCoroutine(showText());
+            if (showTextRoutine == null)
+            {
+                showTextRoutine = StartCoroutine(showText());
+            }
+            else
+            {
+                StopCoroutine(showTextRoutine);
+                showTextRoutine = StartCoroutine(showText());
+            }
+
         }
 
         private IEnumerator showText()

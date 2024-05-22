@@ -1,11 +1,10 @@
 ﻿using Sirenix.OdinInspector;
-using UnityEditor;
 using UnityEngine;
 
 namespace Config
 {
     [CreateAssetMenu(fileName = "Locker", menuName = "Config/Create Locker Settings")]
-    internal class Locker : ScriptableSingleton<Locker>
+    internal class Locker : SingletonScriptableObject<Locker>
     {
         [SerializeField]
         private bool movementLocked = false;

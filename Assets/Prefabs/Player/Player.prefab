@@ -18,7 +18,7 @@ GameObject:
   - component: {fileID: 7820462480737605228}
   m_Layer: 0
   m_Name: Player
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -157,7 +157,10 @@ MonoBehaviour:
   notRenderInFps:
   - {fileID: 9178685238529100562}
   fpMovement: {fileID: 7491972269619586326}
+  shootLaser: {fileID: 788891750383207289}
   timeSlow: 3
+  droneReticle: {fileID: 0}
+  playerReticle: {fileID: 0}
   SwitchKey: 102
 --- !u!114 &7820462480737605228
 MonoBehaviour:
@@ -239,6 +242,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
+--- !u!114 &788891750383207289 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3090599464327608008, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}
+  m_PrefabInstance: {fileID: 2312236706064086449}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0ed10aae01d6b084a900841c55d76044, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &6753341094105582877 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 9056203359700629676, guid: 55ddfdfbd80d037449bf6591962534f8, type: 3}

@@ -12,15 +12,24 @@ namespace _LevelSpecific
         private Transform leftChild;
         private Transform rightChild;
 
+        private new bool collider = false;
+
         private void Start()
         {
             leftChild = transform.GetChild(0);
             rightChild = transform.GetChild(1);
+        }
 
+        private void Update()
+        {
             lineRenderer.SetPosition(0, leftChild.position);
             lineRenderer.SetPosition(1, rightChild.position);
 
-            lineRenderer.enabled = true;
+            if (!collider)
+            {
+                lineRenderer.enabled = true;
+                collider = true;
+            }
         }
         private void OnTriggerEnter(Collider collision)
         {

@@ -34,10 +34,13 @@ TagManager:
   - 
   - 
   - 
-  - 
+  - Item
   - Laser
   - Invisible
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: asd
+    uniqueID: 2098855741
     locked: 0

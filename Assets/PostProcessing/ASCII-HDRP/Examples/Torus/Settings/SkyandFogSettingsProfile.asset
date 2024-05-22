@@ -90,7 +90,7 @@ MonoBehaviour:
     m_Value: 8
   groundTint:
     m_OverrideState: 1
-    m_Value: {r: 1, g: 1, b: 1, a: 1}
+    m_Value: {r: 0.12246767, g: 0.745283, b: 0.08788714, a: 1}
   groundColorTexture:
     m_OverrideState: 0
     m_Value: {fileID: 0}
@@ -300,10 +300,10 @@ MonoBehaviour:
     m_Value: 0
   limitMin:
     m_OverrideState: 1
-    m_Value: 2
+    m_Value: -3.80323
   limitMax:
     m_OverrideState: 1
-    m_Value: 14
+    m_Value: 13.414097
   curveMap:
     m_OverrideState: 0
     m_Value:

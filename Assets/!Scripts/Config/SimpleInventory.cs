@@ -1,12 +1,11 @@
-﻿using System;
-using UnityEditor;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace _Config
 {
     [CreateAssetMenu(fileName = "SimpleInventory", menuName = "Config/Create SimpleInventory")]
-    internal class SimpleInventory : ScriptableSingleton<SimpleInventory>
+    internal class SimpleInventory : SingletonScriptableObject<SimpleInventory>
     {
+
         [SerializeField]
         public bool hasDrone = false;
 
@@ -14,7 +13,13 @@ namespace _Config
         public bool phoneUsed = false;
 
         [SerializeField]
+        public bool talkedToInformant = false;
+
+        [SerializeField]
         public bool japanGamePassed = false;
+
+        [SerializeField]
+        public bool toOfficeCardObtained = false;
 
         [SerializeField]
         public bool runnerPazzlePassed = false;
