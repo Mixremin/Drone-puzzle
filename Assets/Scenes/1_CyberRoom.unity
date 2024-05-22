@@ -8556,7 +8556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 27e163752cb00cf4b8d9c7ee52f9a2b6, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  canvas: {fileID: 0}
+  canvas: {fileID: 892579348}
   phonePrefab: {fileID: 8632525667873900328, guid: 7f928e4f2e4b73147a92ee4fa5299520, type: 3}
 --- !u!135 &774051939
 SphereCollider:
