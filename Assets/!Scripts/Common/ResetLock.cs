@@ -17,6 +17,7 @@ namespace _Common
         private Scene currentScene;
         private void Awake()
         {
+            Time.timeScale = 1.0f;
             currentScene = SceneManager.GetActiveScene();
             Locker.instance.InFPSLock();
             RoomSetup();

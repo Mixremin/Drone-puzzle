@@ -52,4 +52,4 @@ MonoBehaviour:
   - {fileID: 6408237816972640130, guid: 3f3b6be71618a1c458394fd6624adf91, type: 3}
   - {fileID: 974518890229636784, guid: aef4f50ce94ae804d940b61369027442, type: 3}
   _roadLength: 10
-  roadSpeed: 5
+  roadSpeed: 3

@@ -1,4 +1,5 @@
-﻿using Player;
+﻿using _Managers;
+using Player;
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -17,13 +18,18 @@ namespace _LevelSpecific
         {
             if (other.gameObject.TryGetComponent<FirstPersonMovement>(out _) && dieOnTouch)
             {
-                SceneManager.LoadScene(2);
+                Scene scene = SceneManager.GetActiveScene();
+                SceneManager.LoadScene(scene.name);
             }
         }
 
         private void Death()
         {
             Debug.Log("Need effect for death");
+            if (RunnerManager.instance != null)
+            {
+                RunnerManager.instance.EnemyKilled();
+            }
             Destroy(gameObject);
         }
 
