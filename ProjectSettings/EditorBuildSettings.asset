@@ -12,9 +12,15 @@ EditorBuildSettings:
     path: Assets/Scenes/2_CyberCity.unity
     guid: 869f0820ec911c8448bd0d8c805fb683
   - enabled: 1
+    path: Assets/Scenes/2.5_CyberJapan.unity
+    guid: 823dc1d050cca014a9ce2cadb3a65fbe
+  - enabled: 1
+    path: Assets/Scenes/3_Lobby.unity
+    guid: 907f08901c931904bb38c525439b2104
+  - enabled: 1
     path: Assets/Scenes/3.5_runnerPuzzle.unity
     guid: c7ef0b20e41cd1b4dba3fae12f0673aa
   - enabled: 1
-    path: Assets/Scenes/TestPolygon.unity
-    guid: 9fc0d4010bbf28b4594072e72b8655ab
+    path: Assets/Scenes/4_Underground.unity
+    guid: 64fc985c3ef6ad44aa0d70786cf6e67f
   m_configObjects: {}
