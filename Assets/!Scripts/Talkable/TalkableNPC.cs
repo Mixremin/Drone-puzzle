@@ -16,6 +16,9 @@ namespace _Talkable
         [SerializeField]
         private Canvas canvas;
 
+        [SerializeField]
+        private bool mainInteraction = true;
+
         private SlideshowParent slideshowScript;
 
         [Button]
@@ -25,9 +28,19 @@ namespace _Talkable
         }
 
         public void Interact()
+
+        {
+            if (mainInteraction)
+            {
+                StartDialogue();
+            }
+        }
+
+        public void StartDialogue()
         {
             _ = StartCoroutine(StartSlideshow());
         }
+
 
         private IEnumerator StartSlideshow()
         {

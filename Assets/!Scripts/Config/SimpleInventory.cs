@@ -13,6 +13,9 @@ namespace _Config
         public bool phoneUsed = false;
 
         [SerializeField]
+        public bool talkedToInformant = false;
+
+        [SerializeField]
         public bool japanGamePassed = false;
 
         [SerializeField]

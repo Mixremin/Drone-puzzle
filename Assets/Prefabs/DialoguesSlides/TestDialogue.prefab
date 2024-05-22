@@ -61,7 +61,7 @@ MonoBehaviour:
   - {fileID: 1460011365135717032}
   - {fileID: 6942720843862280697}
   slideStructs: []
-  playLast: 0
+  playLast: 1
   SlideshowStarted:
     m_PersistentCalls:
       m_Calls: []
