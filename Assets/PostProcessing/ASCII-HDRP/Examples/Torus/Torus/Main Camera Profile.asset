@@ -217,7 +217,7 @@ MonoBehaviour:
   active: 1
   intensity:
     m_OverrideState: 1
-    m_Value: 1
+    m_Value: 0.888
   gamma:
     m_OverrideState: 1
     m_Value: 10
@@ -235,7 +235,7 @@ MonoBehaviour:
     m_Value: 1
   symbolColor:
     m_OverrideState: 1
-    m_Value: {r: 0, g: 0.8490566, b: 0.053343773, a: 1}
+    m_Value: {r: 0.06453328, g: 0.8509804, b: 0, a: 1}
   backgroundColor:
     m_OverrideState: 1
     m_Value: {r: 0, g: 0, b: 0, a: 1}
