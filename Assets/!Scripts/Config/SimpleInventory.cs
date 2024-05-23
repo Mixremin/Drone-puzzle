@@ -30,7 +30,5 @@ namespace _Config
         [SerializeField]
         public bool runnerPazzlePassed = false;
 
-
-
     }
 }

@@ -39,6 +39,7 @@ namespace _Managers
 
             if (killedEnemies >= needToKill)
             {
+                Physics.gravity = new Vector3(0.0f, -9.81f, 0.0f);
                 SimpleInventory.instance.runnerPazzlePassed = true;
                 SceneManager.LoadScene(sceneToLoad);
             }

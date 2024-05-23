@@ -29,7 +29,7 @@ public class Door : MonoBehaviour
 
     public void openDoor(Collider c)
     {
-        if (c.TryGetComponent<FirstPersonMovement>(out _))
+        if (c.TryGetComponent<FirstPersonMovement>(out _) && animator != null && audioSource != null)
         {
             audioSource.Play();
             animator.SetTrigger(trDoorOpen);
@@ -38,7 +38,7 @@ public class Door : MonoBehaviour
     }
     public void closeDoor(Collider c)
     {
-        if (c.TryGetComponent<FirstPersonMovement>(out _))
+        if (c.TryGetComponent<FirstPersonMovement>(out _) && animator != null && audioSource != null)
         {
             audioSource.Play();
             animator.SetTrigger(trDoorClose);

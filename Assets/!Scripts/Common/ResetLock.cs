@@ -33,6 +33,9 @@ namespace _Common
                 SimpleInventory.instance.talkedToInformant = false;
                 SimpleInventory.instance.canStartJapanGame = false;
                 SimpleInventory.instance.japanGamePassed = false;
+                SimpleInventory.instance.hackerQuestPassed = false;
+                SimpleInventory.instance.toOfficeCardObtained = false;
+                SimpleInventory.instance.runnerPazzlePassed = false;
             }
         }
 
@@ -45,6 +48,9 @@ namespace _Common
                 SimpleInventory.instance.talkedToInformant = false;
                 SimpleInventory.instance.canStartJapanGame = false;
                 SimpleInventory.instance.japanGamePassed = false;
+                SimpleInventory.instance.hackerQuestPassed = false;
+                SimpleInventory.instance.toOfficeCardObtained = false;
+                SimpleInventory.instance.runnerPazzlePassed = false;
             }
         }
 
@@ -57,6 +63,9 @@ namespace _Common
                 SimpleInventory.instance.talkedToInformant = true;
                 SimpleInventory.instance.canStartJapanGame = true;
                 SimpleInventory.instance.japanGamePassed = true;
+                SimpleInventory.instance.hackerQuestPassed = false;
+                SimpleInventory.instance.toOfficeCardObtained = false;
+                SimpleInventory.instance.runnerPazzlePassed = false;
             }
         }
     }

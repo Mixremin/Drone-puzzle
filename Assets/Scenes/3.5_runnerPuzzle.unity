@@ -3309,6 +3309,10 @@ PrefabInstance:
       propertyPath: jumpStrength
       value: 5
       objectReference: {fileID: 0}
+    - target: {fileID: 1939459866930071776, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 123909956}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
@@ -11667,7 +11671,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c3f4607a516ea7478c27e670d0df5fc, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  needToKill: 10
+  needToKill: 7
   killedEnemies: 0
   sceneToLoad: 3
 --- !u!43 &869283475
@@ -14196,7 +14200,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1184312181444587434, guid: 2a617f4a3e24c1e428ec5a8fd28d05de, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 116.41165
+      value: 116.41174
       objectReference: {fileID: 0}
     - target: {fileID: 1184312181444587435, guid: 2a617f4a3e24c1e428ec5a8fd28d05de, type: 3}
       propertyPath: m_Mode

@@ -63,6 +63,7 @@ namespace UI
             if (playLast)
             {
                 yield return ShowSlide(slides.Last());
+                yield return new WaitForSeconds(slides.Last().FadeTime * 2);
                 SlideshowEnded?.Invoke();
             }
             else
@@ -76,7 +77,7 @@ namespace UI
                         yield return ShowSlide(slide);
                     }
 
-                    yield return new WaitForSeconds(slides.Last().FadeTime);
+                    yield return new WaitForSeconds(slides.Last().FadeTime * 2);
                     SlideshowEnded?.Invoke();
                 }
                 else
@@ -93,6 +94,7 @@ namespace UI
                     }
 
 
+                    yield return new WaitForSeconds(slides.Last().FadeTime * 2);
                     SlideshowEnded?.Invoke();
                 }
             }

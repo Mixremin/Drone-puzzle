@@ -7287,6 +7287,10 @@ PrefabInstance:
       propertyPath: playerCam
       value: 
       objectReference: {fileID: 1930549946}
+    - target: {fileID: 1939459866930071776, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1930549946}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 

@@ -1,4 +1,5 @@
-﻿using System.Linq;
+﻿using _Player;
+using System.Linq;
 using UnityEngine;
 namespace Player
 {
@@ -16,6 +17,12 @@ namespace Player
         private Vector2 lastCharacterPosition;
 
         private Vector2 CurrentCharacterPosition => new(character.transform.position.x, character.transform.position.z);
+
+        [Header("Ouch")]
+        public PlayerStats playerStats;
+        public AudioSource ouchAudio;
+        public AudioClip[] ouchSFX;
+
 
         [Header("Landing")]
         public AudioSource landingAudio;
@@ -137,6 +144,12 @@ namespace Player
         {
             PlayRandomClip(crouchEndAudio, crouchEndSFX);
         }
+
+        private void PlayDamageSound()
+        {
+            PlayRandomClip(ouchAudio, ouchSFX);
+        }
+
         #endregion
 
         #region Subscribe/unsubscribe to events.
@@ -157,6 +170,11 @@ namespace Player
                 crouch.CrouchStart += PlayCrouchStartAudio;
                 crouch.CrouchEnd += PlayCrouchEndAudio;
             }
+
+            if (playerStats)
+            {
+                playerStats.damaged += PlayDamageSound;
+            }
         }
 
         private void UnsubscribeToEvents()
@@ -175,6 +193,11 @@ namespace Player
             {
                 crouch.CrouchStart -= PlayCrouchStartAudio;
                 crouch.CrouchEnd -= PlayCrouchEndAudio;
+            }
+
+            if (playerStats)
+            {
+                playerStats.damaged -= PlayDamageSound;
             }
         }
         #endregion
