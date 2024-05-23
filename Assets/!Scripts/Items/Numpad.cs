@@ -13,7 +13,7 @@ namespace _Items
         private ShowTextInteraction firstUse;
 
         [SerializeField]
-        private Door door;
+        private BoxCollider door;
 
         public bool poweredOn = false;
 

@@ -42,7 +42,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: c61c7fb70a223ad4582bf23ad98b017f, type: 3}
+  m_audioClip: {fileID: 8300000, guid: e0663e952dc71184fb8d61da3427a1a4, type: 3}
   m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
@@ -468,6 +468,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 7491972269619586326}
     - target: {fileID: 3309467951574535671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: ouchAudio
+      value: 
+      objectReference: {fileID: 6704204502936125397}
+    - target: {fileID: 3309467951574535671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: jumpSFX.Array.size
       value: 3
       objectReference: {fileID: 0}
@@ -494,7 +498,7 @@ PrefabInstance:
     - target: {fileID: 3309467951574535671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: ouchSFX.Array.data[0]
       value: 
-      objectReference: {fileID: 8300000, guid: c61c7fb70a223ad4582bf23ad98b017f, type: 3}
+      objectReference: {fileID: 8300000, guid: e0663e952dc71184fb8d61da3427a1a4, type: 3}
     - target: {fileID: 3309467951574535671, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: crouchEndSFX.Array.size
       value: 3

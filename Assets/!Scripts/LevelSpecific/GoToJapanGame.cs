@@ -12,7 +12,7 @@ namespace _LevelSpecific
         private int japanGameScene = 2;
         public void Interact()
         {
-            if (SimpleInventory.instance.canStartJapanGame)
+            if (SimpleInventory.instance.canStartJapanGame && !SimpleInventory.instance.japanGamePassed)
             {
                 SceneManager.LoadScene(japanGameScene);
             }

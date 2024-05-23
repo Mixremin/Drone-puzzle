@@ -1,5 +1,4 @@
 ﻿using _Config;
-using System; 
 using UnityEngine;
 using UnityEngine.SceneManagement;
 
@@ -22,11 +21,12 @@ namespace _Items
             if (SimpleInventory.instance.hasDrone && SimpleInventory.instance.phoneUsed)
             {
                 SceneManager.LoadScene(newSceneNum);
-            } 
+            }
             else if (!SimpleInventory.instance.phoneUsed)
             {
                 needPhoneText.Interact();
-            } else if (!SimpleInventory.instance.hasDrone)
+            }
+            else if (!SimpleInventory.instance.hasDrone)
             {
                 needDroneText.Interact();
             }
