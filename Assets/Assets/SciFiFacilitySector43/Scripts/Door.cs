@@ -1,39 +1,45 @@
-﻿using System.Collections;
-using System.Collections.Generic;
+﻿using Player;
 using UnityEngine;
 
-public class Door : MonoBehaviour {
+public class Door : MonoBehaviour
+{
 
-    
+
 
     private int trDoorOpen = Animator.StringToHash("DoorOpen");
     private int trDoorClose = Animator.StringToHash("DoorClose");
     private Animator animator;
     private AudioSource audioSource;
 
-	void Start() {
+    private void Start()
+    {
         animator = GetComponent<Animator>();
         audioSource = GetComponent<AudioSource>();
-	}
+    }
 
-
-	void OnTriggerEnter(Collider c) {
+    private void OnTriggerEnter(Collider c)
+    {
         openDoor(c);
     }
 
-	void OnTriggerExit(Collider c) {
+    private void OnTriggerExit(Collider c)
+    {
         closeDoor(c);
-	}
+    }
 
-    public void openDoor(Collider c) {
-        if (c.tag.Equals("GameController")) {
+    public void openDoor(Collider c)
+    {
+        if (c.TryGetComponent<FirstPersonMovement>(out _))
+        {
             audioSource.Play();
             animator.SetTrigger(trDoorOpen);
 
         }
     }
-    public void closeDoor(Collider c) {
-        if (c.tag.Equals("GameController")) {
+    public void closeDoor(Collider c)
+    {
+        if (c.TryGetComponent<FirstPersonMovement>(out _))
+        {
             audioSource.Play();
             animator.SetTrigger(trDoorClose);
         }

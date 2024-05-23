@@ -920,27 +920,6 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
   m_PrefabInstance: {fileID: 1331807421}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &364039660 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6753341094105582877, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-  m_PrefabInstance: {fileID: 1331807421}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &364039665
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 364039660}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423c0cf748ff0a147a0d43fa4d388638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 567855222}
-  showLayersInDrone:
-    serializedVersion: 2
-    m_Bits: 3221225527
 --- !u!1 &382321264
 GameObject:
   m_ObjectHideFlags: 0
@@ -5311,6 +5290,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   slideshowParent: {fileID: 1164088468888609048, guid: 08300e5da7da29b4c89c3c21a6ccb601, type: 3}
   canvas: {fileID: 2054304444}
+  mainInteraction: 1
 --- !u!135 &1305161617
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5709,6 +5689,10 @@ PrefabInstance:
       propertyPath: laserTravelSpeed
       value: 0.3
       objectReference: {fileID: 0}
+    - target: {fileID: 1939459866930071776, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 567855222}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
@@ -5773,9 +5757,6 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6544310726712660972, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 475493616}
-    - targetCorrespondingSourceObject: {fileID: 6753341094105582877, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 364039665}
   m_SourcePrefab: {fileID: 100100000, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
 --- !u!1 &1390916513 stripped
 GameObject:

@@ -658,6 +658,7 @@ GameObject:
   - component: {fileID: 1159564306665452001}
   - component: {fileID: 8310513842173748871}
   - component: {fileID: 6578706574305913719}
+  - component: {fileID: 4250535419725217105}
   m_Layer: 0
   m_Name: DroneCamera
   m_TagString: Untagged
@@ -758,3 +759,19 @@ MonoBehaviour:
   maxZoomFOV: 15
   currentZoom: 0
   sensitivity: 1
+--- !u!114 &4250535419725217105
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9056203359700629676}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 423c0cf748ff0a147a0d43fa4d388638, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  cam: {fileID: 0}
+  showLayersInDrone:
+    serializedVersion: 2
+    m_Bits: 3221225527
