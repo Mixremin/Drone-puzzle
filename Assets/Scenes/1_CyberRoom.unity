@@ -9103,7 +9103,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -9119,7 +9119,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -9135,7 +9135,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -10977,7 +10977,7 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &892579351 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 5848359765917641449, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
+  m_CorrespondingSourceObject: {fileID: 5846159489090946688, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
   m_PrefabInstance: {fileID: 892579347}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &892579352 stripped
@@ -17614,7 +17614,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150806984456119996, guid: a268fd6c3dc0ab443ad84b9f1fb81065, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 4.9771776
+      value: 5.1271777
       objectReference: {fileID: 0}
     - target: {fileID: 9150806984456119996, guid: a268fd6c3dc0ab443ad84b9f1fb81065, type: 3}
       propertyPath: m_LocalPosition.z
@@ -21668,6 +21668,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: glitchFX
+      value: 
+      objectReference: {fileID: 1818797430}
+    - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
@@ -21719,6 +21723,14 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.z
       value: 1.7934794e-35
       objectReference: {fileID: 0}
+    - target: {fileID: 7143586051634453363, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: eText
+      value: 
+      objectReference: {fileID: 892579352}
+    - target: {fileID: 7143586051634453363, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 1366398131}
     - target: {fileID: 7430642106100491914, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_ProvidesContacts
       value: 0
@@ -21739,9 +21751,6 @@ PrefabInstance:
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1818797434}
     - targetCorrespondingSourceObject: {fileID: 9048112820275943114, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1818797433}
@@ -21772,11 +21781,17 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 9048112820275943114, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
   m_PrefabInstance: {fileID: 1818797425}
   m_PrefabAsset: {fileID: 0}
---- !u!1 &1818797430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+--- !u!114 &1818797430 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 471616062258784736, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
   m_PrefabInstance: {fileID: 1818797425}
   m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &1818797431
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -21927,28 +21942,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 729aad4491e915a41bda2b8325cf757a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1818797434
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818797430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fefa40356bffd844ea818f4c81d4cfb3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  interactionKey: 101
-  interactionRange: 10
-  playerCam: {fileID: 1366398131}
-  eText: {fileID: 892579352}
 --- !u!114 &1818797444 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
   m_PrefabInstance: {fileID: 1818797425}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818797430}
+  m_GameObject: {fileID: 0}
   m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: b2567ee1703ea6042ba5f5510d3aaf98, type: 3}
