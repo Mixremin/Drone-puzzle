@@ -13,6 +13,8 @@ namespace Player
         public Transform view;
         public float runSpeed = 9;
         public KeyCode runningKey = KeyCode.LeftShift;
+
+        public Animator playerAnim;
         private new Rigidbody rigidbody;
         /// <summary> Functions to override movement speed. Will use the last added override. </summary>
         public List<System.Func<float>> speedOverrides = new();
@@ -35,6 +37,12 @@ namespace Player
                 if (speedOverrides.Count > 0)
                 {
                     targetMovingSpeed = speedOverrides[^1]();
+                    playerAnim.SetBool("Crouched", true);
+
+                }
+                else
+                {
+                    playerAnim.SetBool("Crouched", false);
                 }
 
                 // Get targetVelocity from input.
@@ -42,12 +50,26 @@ namespace Player
 
                 // Apply movement.
                 rigidbody.velocity = view.transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+                if (rigidbody.velocity.magnitude > 0)
+                {
+                    playerAnim.SetBool("Walking", true);
+                    playerAnim.SetBool("Running", IsRunning);
+                }
+                else
+                {
+                    playerAnim.SetBool("Walking", false);
+                    playerAnim.SetBool("Running", false);
+                    playerAnim.SetTrigger("Idle");
+                }
             }
         }
 
         public void ResetVelocity()
         {
             rigidbody.velocity = Vector3.zero;
+            playerAnim.SetBool("Walking", false);
+            playerAnim.SetBool("Running", false);
+            playerAnim.SetTrigger("Idle");
         }
     }
 }

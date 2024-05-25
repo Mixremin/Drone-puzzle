@@ -194,15 +194,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6993981020761246690, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.523
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993981020761246690, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.134
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993981020761246690, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 9.191999
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6993981020761246690, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_LocalRotation.w
@@ -250,7 +250,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7657328839503909208, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_Name
-      value: SK_LP287_Style (3)
+      value: Woman3
       objectReference: {fileID: 0}
     - target: {fileID: 8231564526317506789, guid: 26675d109dc1740488f7765420f93631, type: 3}
       propertyPath: m_IsActive

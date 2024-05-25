@@ -10,6 +10,8 @@ namespace Player
 
         [Tooltip("Whether this transform is grounded now.")]
         public bool isGrounded = true;
+
+        public Animator playerAnim;
         /// <summary>
         /// Called when the ground is touched again.
         /// </summary>
@@ -34,6 +36,7 @@ namespace Player
 
             // Update isGrounded.
             isGrounded = isGroundedNow;
+            playerAnim.SetBool("isGrounded", isGrounded);
         }
 
         private void OnDrawGizmosSelected()

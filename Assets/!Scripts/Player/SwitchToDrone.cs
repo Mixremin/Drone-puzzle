@@ -1,8 +1,10 @@
+using _Config;
 using _Drone;
 using Config;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 namespace Player
 {
     internal class SwitchToDrone : MonoBehaviour
@@ -32,6 +34,9 @@ namespace Player
 
         [SerializeField]
         private GameObject droneReticle;
+
+        [SerializeField]
+        private Volume glitchFX;
 
         [SerializeField]
         private GameObject playerReticle;
@@ -66,9 +71,16 @@ namespace Player
         {
             Time.timeScale = 1 / timeSlow;
 
+
+
             playerCam.SetActive(false);
             ShowInTPS();
             droneCam.SetActive(true);
+
+            if (SimpleInventory.instance.runnerPazzlePassed)
+            {
+                glitchFX.profile.components[3].active = true;
+            }
 
             Locker.instance.InDroneLock();
             fpMovement.ResetVelocity();
@@ -83,10 +95,17 @@ namespace Player
 
             Time.timeScale = 1f;
 
+
+
             droneCam.SetActive(false);
             HideInFPS();
 
             playerCam.SetActive(true);
+
+            if (SimpleInventory.instance.runnerPazzlePassed)
+            {
+                glitchFX.profile.components[3].active = true;
+            }
 
             Locker.instance.InFPSLock();
 
