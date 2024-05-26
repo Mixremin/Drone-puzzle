@@ -15,7 +15,7 @@ namespace _Dialogue
         [Serializable]
         private struct Replica
         {
-            public AudioClip replicSound;
+            public float holdTime;
             public string subtitleText;
         }
 
@@ -34,11 +34,11 @@ namespace _Dialogue
         private float WaitBefore = 0f;
 
         private string Info =>
-    $"Total time on of replica +-{replicas.Sum(x => x.replicSound.length)} sec";
+    $"Total time on of replica +-{replicas.Sum(x => x.holdTime)} sec";
 
         public void StartSpeak()
         {
-            audioSource = transform.parent.transform.parent.GetComponent<AudioSource>();
+            //audioSource = transform.parent.transform.parent.GetComponent<AudioSource>();
             _ = StartCoroutine(SpeakRoutine());
         }
 
@@ -48,12 +48,10 @@ namespace _Dialogue
 
             foreach (Replica replica in replicas)
             {
-                audioSource.clip = replica.replicSound;
-                audioSource.Play();
                 subtitleView.text = replica.subtitleText;
                 subtitleView.enabled = true;
 
-                yield return new WaitForSeconds(replica.replicSound.length);
+                yield return new WaitForSeconds(replica.holdTime);
             }
             subtitleView.enabled = false;
         }
