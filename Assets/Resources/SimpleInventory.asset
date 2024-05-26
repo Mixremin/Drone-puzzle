@@ -12,11 +12,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb248a8e4d7eda4bbe04ee686816e2d, type: 3}
   m_Name: SimpleInventory
   m_EditorClassIdentifier: 
-  hasDrone: 0
-  phoneUsed: 0
-  talkedToInformant: 0
-  canStartJapanGame: 0
-  japanGamePassed: 0
-  hackerQuestPassed: 0
-  toOfficeCardObtained: 0
-  runnerPazzlePassed: 1
+  _hasDrone: 1
+  _phoneUsed: 1
+  _talkedToInformant: 0
+  _canStartJapanGame: 0
+  _japanGamePassed: 0
+  _hackerQuestPassed: 0
+  _toOfficeCardObtained: 0
+  _runnerPazzlePassed: 1

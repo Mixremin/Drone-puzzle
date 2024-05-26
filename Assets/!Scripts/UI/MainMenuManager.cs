@@ -19,6 +19,9 @@ namespace _UI
         private void Start()
         {
             OpenMainMenu();
+
+            Cursor.visible = true;
+            Cursor.lockState = CursorLockMode.Confined;
         }
 
         public void OpenMainMenu()

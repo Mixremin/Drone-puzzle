@@ -1,5 +1,6 @@
 using _Config;
 using _Drone;
+using _Horror;
 using Config;
 using Sirenix.OdinInspector;
 using System.Collections.Generic;
@@ -9,6 +10,7 @@ namespace Player
 {
     internal class SwitchToDrone : MonoBehaviour
     {
+        [Header("Components")]
         [Required]
         [SerializeField]
         private GameObject playerCam;
@@ -29,6 +31,7 @@ namespace Player
         [SerializeField]
         private ShootLaser shootLaser;
 
+        [Header("Settings and UI")]
         [SerializeField]
         private float timeSlow = 3f;
 
@@ -40,6 +43,12 @@ namespace Player
 
         [SerializeField]
         private GameObject playerReticle;
+
+        [Header("Horror")]
+        [SerializeField]
+        private ShowScreamer showScreamer;
+
+        public bool needToShowScreamer = false;
 
         public KeyCode SwitchKey = KeyCode.F;
 
@@ -60,6 +69,11 @@ namespace Player
                 {
                     if (!isDroning)
                     {
+                        if (needToShowScreamer)
+                        {
+                            showScreamer.SpawnScreamer();
+                            needToShowScreamer = false;
+                        }
                         SwitchToDroning();
                     }
                     else
