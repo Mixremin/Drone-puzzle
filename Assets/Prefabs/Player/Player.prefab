@@ -318,7 +318,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   interactionKey: 101
-  interactionRange: 10
+  interactionRange: 7
   playerCam: {fileID: 0}
   eText: {fileID: 0}
 --- !u!1001 &2312236706064086449
@@ -1048,7 +1048,7 @@ PrefabInstance:
       objectReference: {fileID: 243485103152924164, guid: a9e5d729576b0a5478cec30207263369, type: 2}
     - target: {fileID: 3434087592857000476, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: isGrounded
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3434087592857000476, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: playerAnim
