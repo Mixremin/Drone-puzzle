@@ -124,7 +124,7 @@ namespace _Drone
 
             laserImpacting = true;
             yield return new WaitForSeconds(0.1f);
-
+            Debug.Log(hit.transform);
             if (hit.transform.TryGetComponent<IEnemy>(out IEnemy enemy))
             {
                 enemy.TakeTick();
