@@ -3769,7 +3769,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 26497283a24831c47a20fc4f068b1722, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  sceneInt: 1
+  sceneInt: 2
 --- !u!1 &305247551
 GameObject:
   m_ObjectHideFlags: 0
@@ -7294,7 +7294,7 @@ PrefabInstance:
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
-      objectReference: {fileID: 817408838}
+      objectReference: {fileID: 0}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerReticle
       value: 
@@ -18112,11 +18112,6 @@ MonoBehaviour:
 --- !u!1 &817408837 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4573840331766088729, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
-  m_PrefabInstance: {fileID: 817408834}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &817408838 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5848359765917641449, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
   m_PrefabInstance: {fileID: 817408834}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &823460061
@@ -36419,7 +36414,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9150806984456119996, guid: a268fd6c3dc0ab443ad84b9f1fb81065, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 5.073435
+      value: 5.223435
       objectReference: {fileID: 0}
     - target: {fileID: 9150806984456119996, guid: a268fd6c3dc0ab443ad84b9f1fb81065, type: 3}
       propertyPath: m_LocalPosition.z

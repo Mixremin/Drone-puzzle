@@ -1202,7 +1202,7 @@ Transform:
   m_GameObject: {fileID: 123909954}
   serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 1.5, z: 0}
+  m_LocalPosition: {x: 0, y: 1.65, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -3316,7 +3316,7 @@ PrefabInstance:
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
-      objectReference: {fileID: 1760937201}
+      objectReference: {fileID: 0}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerReticle
       value: 
@@ -11673,7 +11673,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   needToKill: 7
   killedEnemies: 0
-  sceneToLoad: 3
+  sceneToLoad: 4
 --- !u!43 &869283475
 Mesh:
   m_ObjectHideFlags: 0
@@ -22703,11 +22703,6 @@ Canvas:
 --- !u!1 &1760937200 stripped
 GameObject:
   m_CorrespondingSourceObject: {fileID: 4573840331766088729, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
-  m_PrefabInstance: {fileID: 1760937198}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1760937201 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5848359765917641449, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
   m_PrefabInstance: {fileID: 1760937198}
   m_PrefabAsset: {fileID: 0}
 --- !u!114 &1760937202 stripped

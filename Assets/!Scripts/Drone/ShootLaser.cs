@@ -50,14 +50,16 @@ namespace _Drone
         {
             if (!Locker.instance.ShootingLocked)
             {
-
-                if (Input.GetKey(shootButton))
+                if (!Locker.instance.LockedByMenu)
                 {
-                    ProcessShooting();
-                }
-                if (Input.GetKeyUp(shootButton))
-                {
-                    StopShooting();
+                    if (Input.GetKey(shootButton))
+                    {
+                        ProcessShooting();
+                    }
+                    if (Input.GetKeyUp(shootButton))
+                    {
+                        StopShooting();
+                    }
                 }
             }
         }

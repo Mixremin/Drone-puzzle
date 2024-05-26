@@ -12,7 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1f09c8e4a65f0de418223946960f501b, type: 3}
   m_Name: Locker
   m_EditorClassIdentifier: 
-  movementLocked: 0
-  interactionLocked: 0
-  shootingLocked: 1
+  movementLocked: 1
+  interactionLocked: 1
+  shootingLocked: 0
   cameraLocked: 0
+  menuLocked: 0
+  lockedByMenu: 0
