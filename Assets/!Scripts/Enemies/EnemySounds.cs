@@ -1,4 +1,5 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using UnityEngine;
 
 namespace _Enemies
 {
@@ -12,6 +13,27 @@ namespace _Enemies
         private AudioSource shootSource;
 
         [SerializeField]
-        private AudioSource stepSource;
+        private List<AudioClip> stepClips;
+
+        [SerializeField]
+        private List<AudioClip> shootClips;
+
+        public void PlayStep()
+        {
+            if (stepClips != null)
+            {
+                stepSource.clip = stepClips[Random.Range(0, stepClips.Count)];
+                stepSource.Play();
+            }
+        }
+
+        public void PlayShoot()
+        {
+            if (shootClips != null)
+            {
+                shootSource.clip = shootClips[Random.Range(0, shootClips.Count)];
+                shootSource.Play();
+            }
+        }
     }
 }
