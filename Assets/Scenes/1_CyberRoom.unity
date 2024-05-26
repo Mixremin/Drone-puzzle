@@ -835,7 +835,7 @@ Transform:
   m_GameObject: {fileID: 43088976}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -2.632, y: -1.24, z: 4.749}
+  m_LocalPosition: {x: -2.677, y: -1.24, z: 4.348}
   m_LocalScale: {x: 0.3000001, y: 0.29999992, z: 0.3}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -4996,7 +4996,7 @@ AudioSource:
   m_GameObject: {fileID: 481422626}
   m_Enabled: 1
   serializedVersion: 4
-  OutputAudioMixerGroup: {fileID: 0}
+  OutputAudioMixerGroup: {fileID: 243864778437365490, guid: a9e5d729576b0a5478cec30207263369, type: 2}
   m_audioClip: {fileID: 0}
   m_PlayOnAwake: 0
   m_Volume: 0.1
@@ -5096,11 +5096,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   radioSound: {fileID: 481422628}
-  music1: {fileID: 8300000, guid: 1988e935485191b4ca3e962e2ebd38bc, type: 3}
-  music2: {fileID: 8300000, guid: 41d5fda273d030d4187530fbe29f22d9, type: 3}
-  music3: {fileID: 8300000, guid: eeba2d9f38e82894ebaa7e57c850eb90, type: 3}
-  noise: {fileID: 8300000, guid: 7a4b56d500c11d448969612c5873cf32, type: 3}
-  threat: {fileID: 8300000, guid: 3071971848012f54ab22bcff5c38afad, type: 3}
+  music1: {fileID: 8300000, guid: f9b12912f82f6b343ad173a05046fc2b, type: 3}
+  music2: {fileID: 8300000, guid: f39be4dc560e86d4b998cebf2dd5dd64, type: 3}
+  music3: {fileID: 8300000, guid: 7499fb858db24084495f2713b6ecb25b, type: 3}
+  noise: {fileID: 8300000, guid: 806b653174ec98b40b27fa1c20a41377, type: 3}
+  threat: {fileID: 8300000, guid: aa2431430d40b8a469c082d2dff810b6, type: 3}
   radioType: 0
 --- !u!135 &481422630
 SphereCollider:
@@ -8956,7 +8956,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 243485103152924164, guid: a9e5d729576b0a5478cec30207263369, type: 2}
   m_audioClip: {fileID: 8300000, guid: 383ca11743f52cc4ca472670589fd9ac, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.2
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8965,9 +8965,9 @@ AudioSource:
   Priority: 128
   DopplerLevel: 1
   MinDistance: 1
-  MaxDistance: 500
+  MaxDistance: 5
   Pan2D: 0
-  rolloffMode: 0
+  rolloffMode: 2
   BypassEffects: 0
   BypassListenerEffects: 0
   BypassReverbZones: 0
@@ -9000,7 +9000,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 1
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -9015,7 +9015,7 @@ AudioSource:
     m_Curve:
     - serializedVersion: 3
       time: 0
-      value: 0
+      value: 0.16666667
       inSlope: 0
       outSlope: 0
       tangentMode: 0
@@ -10859,7 +10859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1792.405
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -17320,7 +17320,7 @@ Transform:
   m_GameObject: {fileID: 1332493466}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0.7071068, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalPosition: {x: -0, y: -0.11, z: 0.11}
   m_LocalScale: {x: 3.3333323, y: 3.3333323, z: 3.333333}
   m_ConstrainProportionsScale: 0
   m_Children: []
