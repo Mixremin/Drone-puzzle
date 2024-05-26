@@ -7292,9 +7292,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1930549946}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: glitchFX
+      value: 
+      objectReference: {fileID: 416558522}
+    - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1183134190}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerReticle
       value: 
@@ -7337,6 +7341,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1097942779}
   m_SourcePrefab: {fileID: 100100000, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+--- !u!114 &416558522 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 471616062258784736, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+  m_PrefabInstance: {fileID: 416558521}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &434770088
 GameObject:
   m_ObjectHideFlags: 0
@@ -18153,7 +18168,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1792.405
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -23103,6 +23118,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1183134190 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5846159489090946688, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
+  m_PrefabInstance: {fileID: 817408834}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1185280262
 GameObject:
   m_ObjectHideFlags: 0

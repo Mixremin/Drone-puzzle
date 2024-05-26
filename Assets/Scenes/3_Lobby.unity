@@ -2341,7 +2341,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1792.405
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -4198,9 +4198,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 483523602}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: glitchFX
+      value: 
+      objectReference: {fileID: 106442810}
+    - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 394067789}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerReticle
       value: 
@@ -6536,6 +6540,11 @@ PrefabInstance:
 Transform:
   m_CorrespondingSourceObject: {fileID: 7865179889231820366, guid: af3e699c1aabdd2408775d25271b378d, type: 3}
   m_PrefabInstance: {fileID: 387672956}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &394067789 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5846159489090946688, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
+  m_PrefabInstance: {fileID: 168310415}
   m_PrefabAsset: {fileID: 0}
 --- !u!1001 &407866528
 PrefabInstance:

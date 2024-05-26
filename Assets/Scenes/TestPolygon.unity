@@ -630,6 +630,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Robot_Main (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 1284330637282038, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 4163908183204388, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.430021
@@ -697,6 +701,9 @@ PrefabInstance:
     - {fileID: 64054697796338923, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
     - {fileID: 8754149469794241167, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
     - {fileID: 6150500956345448069, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+    - {fileID: 6031152697493793245, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+    - {fileID: 1186598125480406806, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+    - {fileID: 692878408372083420, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -4362,7 +4369,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1284330637282038, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4163908183204388, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
       propertyPath: m_LocalPosition.x
@@ -4428,7 +4435,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 0
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    m_RemovedComponents:
+    - {fileID: 6031152697493793245, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+    - {fileID: 1186598125480406806, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
+    - {fileID: 692878408372083420, guid: 72b81e4d10dd7ad4a9cc2c968cea8abe, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
@@ -9013,7 +9023,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1792.405
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y

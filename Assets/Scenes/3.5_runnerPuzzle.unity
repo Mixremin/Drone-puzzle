@@ -3314,9 +3314,13 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 123909956}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: glitchFX
+      value: 
+      objectReference: {fileID: 1856167959}
+    - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1411665404}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: playerReticle
       value: 
@@ -18938,6 +18942,11 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!1 &1411665404 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5846159489090946688, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
+  m_PrefabInstance: {fileID: 1760937198}
+  m_PrefabAsset: {fileID: 0}
 --- !u!43 &1428284221
 Mesh:
   m_ObjectHideFlags: 0
@@ -22751,7 +22760,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1792.405
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y
