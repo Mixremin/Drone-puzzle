@@ -22,6 +22,14 @@ namespace Config
         private bool cameraLocked = false;
         public bool CameraLocked => cameraLocked;
 
+        [SerializeField]
+        private bool menuLocked = false;
+        public bool MenuLocked => menuLocked;
+
+        [SerializeField]
+        private bool lockedByMenu = false;
+        public bool LockedByMenu => lockedByMenu;
+
         [Button]
         public void InDroneLock()
         {
@@ -29,6 +37,9 @@ namespace Config
             interactionLocked = true;
             shootingLocked = false;
             cameraLocked = false;
+
+            menuLocked = false;
+            lockedByMenu = false;
         }
 
         public void LockMovement()
@@ -50,6 +61,9 @@ namespace Config
             interactionLocked = false;
             shootingLocked = true;
             cameraLocked = false;
+
+            menuLocked = false;
+            lockedByMenu = false;
         }
 
         public void LockAll()
@@ -58,6 +72,21 @@ namespace Config
             interactionLocked = true;
             shootingLocked = true;
             cameraLocked = true;
+
+            menuLocked = true;
+        }
+
+        public void MenuLock()
+        {
+
+            menuLocked = false;
+            lockedByMenu = true;
+        }
+
+        public void MenuUnlock()
+        {
+            menuLocked = false;
+            lockedByMenu = false;
         }
     }
 

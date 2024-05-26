@@ -15,24 +15,30 @@ namespace Michsky.UI.Shift
         [SerializeField]
         public UnityEvent pressAction;
 
-        void Start()
+        private void Start()
         {
             if (invokeAtStart == true)
+            {
                 pressAction.Invoke();
+            }
         }
 
-        void Update()
+        private void Update()
         {
             if (pressAnyKey == true)
             {
                 if (Input.anyKeyDown)
+                {
                     pressAction.Invoke();
+                }
             }
 
             else
             {
                 if (Input.GetKeyDown(hotkey))
+                {
                     pressAction.Invoke();
+                }
             }
         }
     }

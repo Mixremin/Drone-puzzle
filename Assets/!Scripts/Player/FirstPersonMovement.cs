@@ -29,37 +29,40 @@ namespace Player
         {
             if (!Locker.instance.MovementLocked)
             {
-                // Update IsRunning from input.
-                IsRunning = canRun && Input.GetKey(runningKey);
-
-                // Get targetMovingSpeed.
-                float targetMovingSpeed = IsRunning ? runSpeed : speed;
-                if (speedOverrides.Count > 0)
+                if (!Locker.instance.LockedByMenu)
                 {
-                    targetMovingSpeed = speedOverrides[^1]();
-                    playerAnim.SetBool("Crouched", true);
+                    // Update IsRunning from input.
+                    IsRunning = canRun && Input.GetKey(runningKey);
 
-                }
-                else
-                {
-                    playerAnim.SetBool("Crouched", false);
-                }
+                    // Get targetMovingSpeed.
+                    float targetMovingSpeed = IsRunning ? runSpeed : speed;
+                    if (speedOverrides.Count > 0)
+                    {
+                        targetMovingSpeed = speedOverrides[^1]();
+                        playerAnim.SetBool("Crouched", true);
 
-                // Get targetVelocity from input.
-                Vector2 targetVelocity = new(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+                    }
+                    else
+                    {
+                        playerAnim.SetBool("Crouched", false);
+                    }
 
-                // Apply movement.
-                rigidbody.velocity = view.transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
-                if (rigidbody.velocity.magnitude > 0)
-                {
-                    playerAnim.SetBool("Walking", true);
-                    playerAnim.SetBool("Running", IsRunning);
-                }
-                else
-                {
-                    playerAnim.SetBool("Walking", false);
-                    playerAnim.SetBool("Running", false);
-                    playerAnim.SetTrigger("Idle");
+                    // Get targetVelocity from input.
+                    Vector2 targetVelocity = new(Input.GetAxis("Horizontal") * targetMovingSpeed, Input.GetAxis("Vertical") * targetMovingSpeed);
+
+                    // Apply movement.
+                    rigidbody.velocity = view.transform.rotation * new Vector3(targetVelocity.x, rigidbody.velocity.y, targetVelocity.y);
+                    if (rigidbody.velocity.magnitude > 0)
+                    {
+                        playerAnim.SetBool("Walking", true);
+                        playerAnim.SetBool("Running", IsRunning);
+                    }
+                    else
+                    {
+                        playerAnim.SetBool("Walking", false);
+                        playerAnim.SetBool("Running", false);
+                        playerAnim.SetTrigger("Idle");
+                    }
                 }
             }
         }

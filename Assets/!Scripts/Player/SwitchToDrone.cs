@@ -56,13 +56,16 @@ namespace Player
         {
             if (Input.GetKeyUp(SwitchKey))
             {
-                if (!isDroning)
+                if (!Locker.instance.LockedByMenu)
                 {
-                    SwitchToDroning();
-                }
-                else
-                {
-                    SwitchToFPS();
+                    if (!isDroning)
+                    {
+                        SwitchToDroning();
+                    }
+                    else
+                    {
+                        SwitchToFPS();
+                    }
                 }
             }
         }
@@ -70,8 +73,6 @@ namespace Player
         public void SwitchToDroning()
         {
             Time.timeScale = 1 / timeSlow;
-
-
 
             playerCam.SetActive(false);
             ShowInTPS();
@@ -94,8 +95,6 @@ namespace Player
             shootLaser.StopShooting();
 
             Time.timeScale = 1f;
-
-
 
             droneCam.SetActive(false);
             HideInFPS();
