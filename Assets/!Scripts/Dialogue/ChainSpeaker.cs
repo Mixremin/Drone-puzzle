@@ -28,9 +28,6 @@ namespace _Dialogue
         private TextMeshProUGUI subtitleView;
 
         [SerializeField]
-        private AudioSource audioSource;
-
-        [SerializeField]
         private float WaitBefore = 0f;
 
         private string Info =>

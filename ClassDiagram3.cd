@@ -1,0 +1,571 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="_Common.ResetLock" Collapsed="true">
+    <Position X="59.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAABAgAAAAAABAACAAAACAACAAAAAAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Common\ResetLock.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Common.SayOnTrigger" Collapsed="true">
+    <Position X="50.5" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAQAIAAAAAAAAAAAAAAAAAAASAgAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Common\SayOnTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Common.SetPhysycs" Collapsed="true">
+    <Position X="62.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Common\SetPhysycs.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingletonScriptableObject&lt;T&gt;" Collapsed="true">
+    <Position X="1.75" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIIAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Common\SingletoneScriptableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMovement" Collapsed="true">
+    <Position X="48.75" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>UAQEAgAAQAAAAAgEBAQAAAAAACAABgQBAQECCCABAEA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyRangeCombat" Collapsed="true">
+    <Position X="50.5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAACAAAABAAAAAAQAAANAAAAIBAQAAAAAAAIA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyRangeCombat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStats" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAAAAAAAAEAAAAAIAAAAoAQAAgAAAAAg=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyStats.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="TestPlayer" Collapsed="true">
+    <Position X="64.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\TestPlayer.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Road" Collapsed="true">
+    <Position X="34.5" Y="9" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAoAAAAAAAAAAABAAAAAAAAAABAAAAAIAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Runner\Road.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="RoadSpawner" Collapsed="true">
+    <Position X="31" Y="10.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAABAEAAAAAAAQAAAgAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Runner\RoadSpawner.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Door" Collapsed="true">
+    <Position X="59.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>BAIAAAAAACAAAAAGAAAAAAAAAAAAEIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Assets\SciFiFacilitySector43\Scripts\Door.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="DoorTrigger" Collapsed="true">
+    <Position X="61" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAgAAAAAAAAAAAAAAAAAIAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Assets\SciFiFacilitySector43\Scripts\DoorTrigger.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ApplyZoom" Collapsed="true">
+    <Position X="33.25" Y="1.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQABAAAAAAAAAAAIAAAAggAAAAAAAAAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\Assets\SpareParts\Demo\Scripts\ApplyZoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SetTimeScale" Collapsed="true">
+    <Position X="34.25" Y="10.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAACAA=</HashCode>
+      <FileName>Assets\Assets\SpareParts\Demo\Scripts\SetTimeScale.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Config.Locker" Collapsed="true">
+    <Position X="0.5" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>ggABBAAAAAQAAAAgMAAIJAAACBAAAAkACAAAIAgAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Config\Locker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Config.SimpleInventory" Collapsed="true">
+    <Position X="2.75" Y="2" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAIAAGAgAAAAAAAAAAAAQAAAAAAAAAAAAAAAAACgAAA=</HashCode>
+      <FileName>Assets\!Scripts\Config\SimpleInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Cutscene.Starter" Collapsed="true">
+    <Position X="52.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>IAAAAAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Cutscene\Starter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Dialogue.ChainSpeaker" Collapsed="true">
+    <Position X="54" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAABAABAAAAAAEAAQAAAAAEIAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Dialogue\ChainSpeaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.DroneLook" Collapsed="true">
+    <Position X="64.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAEACAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\DroneLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.FollowTarget" Collapsed="true">
+    <Position X="47" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\FollowTarget.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.InvisibleObjects" Collapsed="true">
+    <Position X="57.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgJAAAAIAAAAAAAAAAAAAAAAAAAAAICAAAAAAACAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\InvisibleObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.ShootLaser" Collapsed="true">
+    <Position X="45.25" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>QBQAAAAAhQhIAAAAAIAFAAAAMAAAAAAABIAACEQIAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\ShootLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Drone.DroneUpAndDown" Collapsed="true">
+    <Position X="33.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\DroneUpAndDown.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.LaserObj.LaserProjectile" Collapsed="true">
+    <Position X="33.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAgAAABAAAAAAAAAAAAAIAAAAAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\LaserObj\LaserProjectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Enemies.Projectile" Collapsed="true">
+    <Position X="43.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Items.Bochki.Bochka" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="59.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAACAAAAAAAAIAAAAAAAAAAAAAgAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\Bochki\Bochka.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.cyberdog" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="45.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\cyberdog.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.CyberRoomDoor" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAAAAAAAIIAAAAAACAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\CyberRoomDoor.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.Drone" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAABAAAQAAAAAAAAAAAAAoAAAAAAACQhAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\Drone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.LuxuryCar" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="7.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAABAAAAAAAAAAAAAAAAgAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\LuxuryCar.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.Radio" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="52.25" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAgAAAABACEAAAAAAAEAIAAAAAAAAAEAAABAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\Radio.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.ToOfficeCard" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\ToOfficeCard.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.Phone.Phone" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="50.5" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAACIAAAAgAAAAAAAAAgAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\Phone\Phone.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Items.Phone.PhoneUI" Collapsed="true">
+    <Position X="52.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAABAAAAAAAAAABAAAACAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Items\Phone\PhoneUI.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Items.PuckUps.PickableSphere" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="54" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAQ=</HashCode>
+      <FileName>Assets\!Scripts\Items\PuckUps\PickableSphere.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.bochkiPuzzle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="61" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAQAAAkgAQAwAAAIAAAAAABAIAAAAACAAAAAAAAEQAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\bochkiPuzzle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.CitySpawnManager" Collapsed="true">
+    <Position X="59.25" Y="1.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAIAAAAAEABAAAAAAAgAABAAAAAAAAAAI=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\CitySpawnManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_LevelSpecific.DeathFloor" Collapsed="true">
+    <Position X="50.5" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\DeathFloor.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_LevelSpecific.EnemyInRunner" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="47" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAQAAAAAAAIAAAAAAAgQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\EnemyInRunner.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.GoInsideOffice" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.25" Y="7.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAQAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\GoInsideOffice.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.GoToJapanGame" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="38.25" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAIAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\GoToJapanGame.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.GoToUnderground" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="43.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\GoToUnderground.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_LevelSpecific.Laser" Collapsed="true">
+    <Position X="64.5" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAiEAgAAAAAAAgAAIAAAAAACAAAAAEAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\Laser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_LevelSpecific.SpawnToEnemies" Collapsed="true">
+    <Position X="45.25" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAABAAAAAAAAAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\SpawnToEnemies.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_LevelSpecific.WaitBeforeBlackout" Collapsed="true">
+    <Position X="52.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAwCAAAABAAAACAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\WaitBeforeBlackout.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_LevelSpecific.Lobby.runnerPuzzle" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="48.75" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAAAAAAAAAgAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\Lobby\runnerPuzzle.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Managers.BlackScreenManager" Collapsed="true">
+    <Position X="54" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAGAAAAAACCAAAAAAEAAAAACQABAAgAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Managers\BlackScreenManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Managers.RunnerManager" Collapsed="true">
+    <Position X="47" Y="10.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAIAAACAAAAAgAAAAAAIAAABAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Managers\RunnerManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Crouch" Collapsed="true">
+    <Position X="37.5" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAASAEEBAAhAAAEIAAAAAAAAAAIAEAAAACACAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Crouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.FirstPersonAudio" Collapsed="true">
+    <Position X="33" Y="5.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>wAAKgAUgQwIAhIAABAYARAQBAAQCAAEIAAFAAQBQCEg=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\FirstPersonAudio.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.GroundCheck" Collapsed="true">
+    <Position X="55.75" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIIAAAAAAAAIAQAAAEADAAIAAAAAACAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\GroundCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Jump" Collapsed="true">
+    <Position X="61" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>gAAIAAAAABAABAAAAAAAIAAAAAAAAAAAAAAAAQAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Jump.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Zoom" Collapsed="true">
+    <Position X="57.5" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAgAAAECAAAAAAAAAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Zoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.FirstPersonLook" Collapsed="true">
+    <Position X="37.75" Y="4.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAEACAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\FirstPersonLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.FirstPersonMovement" Collapsed="true">
+    <Position X="43.5" Y="4.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAoAAAAAAAAAAQAAAAAAADQBAAQAAAAABAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\FirstPersonMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.SwitchToDrone" Collapsed="true">
+    <Position X="61" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>kAQIAAACAQAAAAAAAAIAAAAkAAAgAgABkAAAIAIAQEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\SwitchToDrone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Player.Interaction" Collapsed="true">
+    <Position X="55.75" Y="6.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAAAAAAQAAgBAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Interaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Player.Picker" Collapsed="true">
+    <Position X="55.75" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAYAAAAAAAAAAAAQAQgBQAARAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Picker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Player.PlayerStats" Collapsed="true">
+    <Position X="59.25" Y="8.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAIACAAAEAAAAAAAAAAAAAEAAggAAAAgIAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\PlayerStats.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Talkable.HackerNPC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAIAAIAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Talkable\HackerNPC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_Talkable.TalkableNPC" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="62.75" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAACJQAACgAAAQBAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Talkable\TalkableNPC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="_UI.Blackscreen" Collapsed="true">
+    <Position X="52.25" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAAQACAQAAAAAAADAAQAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\UI\Blackscreen.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_UI.MainMenuManager" Collapsed="true">
+    <Position X="50.5" Y="7.5" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAABAAACAEEAAAAAAAAAEgAACQEAAAACAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\UI\MainMenuManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI.Slide" Collapsed="true">
+    <Position X="33" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AACAAAAgACCAQAAAAAABBAAYAAAAABAAAMAEAEAICAE=</HashCode>
+      <FileName>Assets\!Scripts\UI\Slide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI.SlideshowParent" Collapsed="true">
+    <Position X="43.5" Y="12.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AASAAAAABCCQAAAAAAIABAAQEAAAEEQgAABEAMAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\UI\SlideshowParent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityEngine.PostProcessing.RenderTextureFactory" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="57.5" Y="9.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AIAAAAAAACAAAABAAAAAAAAAAAgAAAAAAAAAABAAAAA=</HashCode>
+      <FileName>Assets\Assets\CyberCity\PostProcessing\Runtime\Utils\RenderTextureFactory.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Michsky.UI.Shift.SettingsButton" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="31.75" Y="11.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAQCAAAAAAIAACgAAQQAIAgABAECAAAQAABgQ=</HashCode>
+      <FileName>Assets\Assets\Shift - Complete Sci-Fi UI\Scripts\Buttons\SettingsButton.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Class Name="Michsky.UI.Shift.PressKeyEvent" Collapsed="true">
+    <Position X="37" Y="8.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAACAAAAAAAAAAAAIAAAAAACAAAQACAAAAAAA=</HashCode>
+      <FileName>Assets\Assets\Shift - Complete Sci-Fi UI\Scripts\Event\PressKeyEvent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Michsky.UI.Shift.CanvasManager" Collapsed="true">
+    <Position X="64.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAACAAAAEABAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Assets\Shift - Complete Sci-Fi UI\Scripts\Other\CanvasManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Michsky.UI.Shift.SliderManager" Collapsed="true">
+    <Position X="36.25" Y="11.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAIAEAACABAAhAEAAAACAAAAIAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\Assets\Shift - Complete Sci-Fi UI\Scripts\UI Element\SliderManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Michsky.UI.Shift.UIManager" Collapsed="true">
+    <Position X="61" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAwAEAABIGAQEAAQAEEAgQBAAAAAABgUAAACACAACFI=</HashCode>
+      <FileName>Assets\Assets\Shift - Complete Sci-Fi UI\Scripts\UI Manager\UIManager.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityStandardAssets.Characters.ThirdPerson.ThirdPersonCharacter" Collapsed="true">
+    <Position X="34.25" Y="14.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AISoCQAkAKAQAAACBAIAAEIAAgBBgAIARAKAIAAEgAg=</HashCode>
+      <FileName>Assets\G2_CyborgCharacters\Scrips\Deleteable\ThirdPersonCharacter.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UnityStandardAssets.Characters.ThirdPerson.ThirdPersonUserControl" Collapsed="true">
+    <Position X="35.25" Y="13.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>EAQAAAAAAiAAAAAgQAAAAAAAQAAAAAAAAAAAAAAAAQA=</HashCode>
+      <FileName>Assets\G2_CyborgCharacters\Scrips\Deleteable\ThirdPersonUserControl.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="PostProcessing.ASCII.ASCIIOverlay" Collapsed="true" BaseTypeListCollapsed="true">
+    <Position X="33.5" Y="4.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAEABBAECAAAAAEAEAAAAAAAAAABCAgAgBAIAEAAAEA=</HashCode>
+      <FileName>Assets\PostProcessing\ASCII-HDRP\Scripts\ASCIIOverlay.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" Collapsed="true" />
+  </Class>
+  <Interface Name="_Items.IInteractable">
+    <Position X="30.5" Y="13.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\IInteractable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_Items.PuckUps.IPickable" Collapsed="true">
+    <Position X="33.5" Y="13.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAACAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\PuckUps\IPickable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_LevelSpecific.IEnemy">
+    <Position X="31.5" Y="15.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\IEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Enum Name="Timeframe" Collapsed="true">
+    <Position X="38.25" Y="16.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAEAAAAAAABAAAAAAAgAAAAAIDAAAAQA=</HashCode>
+      <FileName>Assets\Assets\SpareParts\Scripts\Timeframe.cs</FileName>
+    </TypeIdentifier>
+  </Enum>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
