@@ -96,6 +96,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 4071183682695526969, guid: e76854dd0fb436f47a369d5e9ada2033, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 54c362fc3750ea948ab35dca6a15f50b, type: 2}
     - target: {fileID: 4199634526530709594, guid: e76854dd0fb436f47a369d5e9ada2033, type: 3}
       propertyPath: m_Materials.Array.data[0]
       value: 
@@ -250,7 +254,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8992660380984191750, guid: e76854dd0fb436f47a369d5e9ada2033, type: 3}
       propertyPath: m_Name
-      value: SK_PP801_Style (1)
+      value: Man1
       objectReference: {fileID: 0}
     - target: {fileID: 9029807601153663585, guid: e76854dd0fb436f47a369d5e9ada2033, type: 3}
       propertyPath: m_Materials.Array.data[0]
