@@ -232,19 +232,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -357,7 +357,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 4
+      value: 16
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -418,11 +418,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -542,6 +542,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 8
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -601,19 +605,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -729,7 +733,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 4
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -790,15 +794,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -912,7 +916,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 3
+      value: 13
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -973,15 +977,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 7
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -1110,7 +1114,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 3
+      value: 17
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1167,11 +1171,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].replicSound
@@ -1197,7 +1201,7 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].subtitleText
       value: "\u041F\u043E\u043C\u043D\u0438\u0448\u044C \u044F \u0440\u0430\u0441\u0441\u043A\u0430\u0437\u044B\u0432\u0430\u043B\u0430
-        \u043F\u0440\u043E \u0437\u0430\u043A\u0430\u0437 \u043E\u0442 INC \u043A\u043E\u0440\u043F\u043E\u0440\u0430\u0446\u0438\u0438:"
+        \u043F\u0440\u043E \u0437\u0430\u043A\u0430\u0437 \u043E\u0442 INC \u043A\u043E\u0440\u043F\u043E\u0440\u0430\u0446\u0438\u0438?"
       objectReference: {fileID: 0}
     - target: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: m_Pivot.x
@@ -1279,6 +1283,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1338,23 +1346,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].holdTime
-      value: 1
+      value: 6
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -1480,7 +1488,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 5
+      value: 23
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -1541,11 +1549,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -1666,6 +1674,10 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 7
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: WaitBefore
       value: 2
       objectReference: {fileID: 0}
@@ -1724,19 +1736,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[0].holdTime
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[1].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].holdTime
-      value: 1
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -1851,7 +1863,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: HoldTime
-      value: 4
+      value: 19
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
