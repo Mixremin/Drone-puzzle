@@ -13,6 +13,9 @@ namespace _Items.Phone
         [SerializeField]
         private GameObject phonePrefab;
 
+        [SerializeField]
+        private AudioSource audioSource;
+
         private GameObject phoneObject;
 
         [Button]
@@ -25,6 +28,8 @@ namespace _Items.Phone
         public void Interact()
         {
             SimpleInventory.instance.phoneUsed = true;
+
+            Destroy(audioSource);
 
             phoneObject = Instantiate(phonePrefab, canvas.transform);
         }

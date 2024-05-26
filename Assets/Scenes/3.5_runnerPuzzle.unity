@@ -3353,6 +3353,14 @@ PrefabInstance:
       propertyPath: m_BoundingSphereOverride.z
       value: 5.59e-43
       objectReference: {fileID: 0}
+    - target: {fileID: 7143586051634453363, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: eText
+      value: 
+      objectReference: {fileID: 1704043802}
+    - target: {fileID: 7143586051634453363, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: playerCam
+      value: 
+      objectReference: {fileID: 123909956}
     - target: {fileID: 8125594862222077718, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: m_Name
       value: Player
@@ -21660,6 +21668,17 @@ Mesh:
     offset: 0
     size: 0
     path: 
+--- !u!114 &1704043802 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 401189121899516014, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
+  m_PrefabInstance: {fileID: 1760937198}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!43 &1708752545
 Mesh:
   m_ObjectHideFlags: 0
@@ -22828,7 +22847,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1152.405
+      value: 1792.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y

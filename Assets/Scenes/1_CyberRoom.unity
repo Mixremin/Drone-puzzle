@@ -8795,6 +8795,7 @@ GameObject:
   - component: {fileID: 774051938}
   - component: {fileID: 774051939}
   - component: {fileID: 774051940}
+  - component: {fileID: 774051941}
   m_Layer: 0
   m_Name: Phone
   m_TagString: Untagged
@@ -8832,6 +8833,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 892579348}
   phonePrefab: {fileID: 8632525667873900328, guid: 7f928e4f2e4b73147a92ee4fa5299520, type: 3}
+  audioSource: {fileID: 774051941}
 --- !u!65 &774051939
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -8869,7 +8871,7 @@ MonoBehaviour:
   drawingMode: 1
   outlineLayer: 0
   outlineTargets:
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -8885,7 +8887,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -8901,7 +8903,7 @@ MonoBehaviour:
     cutoutTextureName: 
     DilateRenderingMode: 0
     cutoutTextureIndex: 0
-  - IsVisible: 0
+  - IsVisible: 1
     CutoutMask: 8
     edgeDilateAmount: 5
     frontEdgeDilateAmount: 5
@@ -8942,6 +8944,102 @@ MonoBehaviour:
     fillPass:
       shader: {fileID: 0}
       serializedProperties: []
+--- !u!82 &774051941
+AudioSource:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 774051936}
+  m_Enabled: 1
+  serializedVersion: 4
+  OutputAudioMixerGroup: {fileID: 243485103152924164, guid: a9e5d729576b0a5478cec30207263369, type: 2}
+  m_audioClip: {fileID: 8300000, guid: 383ca11743f52cc4ca472670589fd9ac, type: 3}
+  m_PlayOnAwake: 1
+  m_Volume: 0.4
+  m_Pitch: 1
+  Loop: 1
+  Mute: 0
+  Spatialize: 0
+  SpatializePostEffects: 0
+  Priority: 128
+  DopplerLevel: 1
+  MinDistance: 1
+  MaxDistance: 500
+  Pan2D: 0
+  rolloffMode: 0
+  BypassEffects: 0
+  BypassListenerEffects: 0
+  BypassReverbZones: 0
+  rolloffCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    - serializedVersion: 3
+      time: 1
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  panLevelCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  spreadCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  reverbZoneMixCustomCurve:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0.33333334
+      outWeight: 0.33333334
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
 --- !u!1 &779824113
 GameObject:
   m_ObjectHideFlags: 0
@@ -10761,7 +10859,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1152.405
+      value: 1792.405
       objectReference: {fileID: 0}
     - target: {fileID: 2538249579636265263, guid: 28eb8841e202a2441bb33f50829803ac, type: 3}
       propertyPath: m_AnchoredPosition.y
@@ -22368,6 +22466,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1939459866930071776, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+      propertyPath: cam
+      value: 
+      objectReference: {fileID: 1366398131}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: glitchFX
       value: 
@@ -22461,18 +22563,10 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 6544310726712660972, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       insertIndex: -1
       addedObject: {fileID: 1818797432}
-    - targetCorrespondingSourceObject: {fileID: 6753341094105582877, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1818797431}
   m_SourcePrefab: {fileID: 100100000, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
 --- !u!4 &1818797426 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 458262636131863031, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
-  m_PrefabInstance: {fileID: 1818797425}
-  m_PrefabAsset: {fileID: 0}
---- !u!1 &1818797427 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 6753341094105582877, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
   m_PrefabInstance: {fileID: 1818797425}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1818797428 stripped
@@ -22496,22 +22590,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
---- !u!114 &1818797431
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1818797427}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 423c0cf748ff0a147a0d43fa4d388638, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  cam: {fileID: 1366398131}
-  showLayersInDrone:
-    serializedVersion: 2
-    m_Bits: 3221225527
 --- !u!114 &1818797432
 MonoBehaviour:
   m_ObjectHideFlags: 0
