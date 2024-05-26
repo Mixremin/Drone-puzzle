@@ -523,7 +523,7 @@ Animator:
   m_GameObject: {fileID: 4418993380218183735}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: d11bb56f7702e814eaffd34cbaf58066, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -710,6 +710,10 @@ PrefabInstance:
       propertyPath: isGrounded
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3434087592857000476, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
+      propertyPath: playerAnim
+      value: 
+      objectReference: {fileID: 6585515532164885026}
     - target: {fileID: 5508936939506240807, guid: 11aaea5348574644a9eb4f4504fcce3f, type: 3}
       propertyPath: OutputAudioMixerGroup
       value: 

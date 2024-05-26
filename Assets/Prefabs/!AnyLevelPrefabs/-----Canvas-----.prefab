@@ -953,6 +953,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5654267752722885251}
   - component: {fileID: 2622969724693987141}
+  - component: {fileID: 6695035733324209341}
   - component: {fileID: 4147757755980514420}
   - component: {fileID: 1884767672098228513}
   m_Layer: 5
@@ -990,6 +991,38 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1012586553884450093}
   m_CullTransparentMesh: 0
+--- !u!114 &6695035733324209341
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1012586553884450093}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cb677153133ed264d97b550016b4903c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  quests:
+  - "\u0418\u0437\u0443\u0447\u0438\u0442\u044C \u043A\u043E\u043C\u043D\u0430\u0442\u0443"
+  - "\u041D\u0430\u0439\u0442\u0438 \u0420\u043E\u044F \u0443 \u043A\u043B\u0443\u0431\u0430
+    \xABCoctails&Dreams\xBB"
+  - "\u041D\u0430\u0439\u0442\u0438 \u0437\u043D\u0430\u043A\u043E\u043C\u0443\u044E
+    \u0420\u043E\u044F \u0432 \u0446\u0435\u043D\u0442\u0440\u0435"
+  - "\u0412\u0437\u043B\u043E\u043C\u0430\u0442\u044C \u043C\u0430\u0448\u0438\u043D\u0443"
+  - "\u0412\u0435\u0440\u043D\u0443\u0442\u044C\u0441\u044F \u043A \u0410\u043B\u0435\u043A\u0441"
+  - "\u041F\u043E\u0434\u0436\u0435\u0447\u044C \u0434\u0440\u043E\u043D\u043E\u043C
+    \u043C\u0430\u0448\u0438\u043D\u0443 \u0440\u0430\u0431\u043E\u0442\u043D\u0438\u043A\u0430"
+  - "\u041F\u0440\u043E\u043D\u0438\u043A\u043D\u0443\u0442\u044C \u0432 \u043E\u0444\u0438\u0441
+    INC"
+  - "\u0412\u0437\u043B\u043E\u043C\u0430\u0442\u044C \u043A\u043E\u043C\u043F\u044C\u044E\u0442\u0435\u0440
+    \u0432 \u043B\u043E\u0431\u0431\u0438 \u0438 \u043F\u043E\u043B\u0443\u0447\u0438\u0442\u044C
+    \u0434\u043E\u0441\u0442\u0443\u043F \u043A \u043F\u043E\u0434\u0432\u0430\u043B\u044C\u043D\u044B\u043C
+    \u043F\u043E\u043C\u0435\u0449\u0435\u043D\u0438\u044F\u043C"
+  - "\u041D\u0430\u0439\u0442\u0438 \u041A\u0430\u0441\u043F\u0435\u0440\u0430"
+  - "\u041D\u0430\u0439\u0442\u0438 \u041A\u0430\u0441\u043F\u0435\u0440\u0430"
+  questText: {fileID: 4147757755980514420}
+  canChangeQuest: 1
 --- !u!114 &4147757755980514420
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1010,7 +1043,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: Rescue the <b>Allies</b>
+  m_text: Sample text
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
   m_sharedMaterial: {fileID: -2553342967066845870, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
@@ -2595,10 +2628,12 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: '
+
+'
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
+  m_sharedMaterial: {fileID: -2553342967066845870, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2622,8 +2657,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 70
-  m_fontSizeBase: 70
+  m_fontSize: 30
+  m_fontSizeBase: 30
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2743,13 +2778,13 @@ RectTransform:
   m_LocalScale: {x: 0, y: 0, z: 0}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 615890449630005921}
   - {fileID: 2762382789065474894}
-  - {fileID: 8577238722265078619}
   - {fileID: 5925262117211809232}
   - {fileID: 1809900125483385820}
   - {fileID: 5326653800919921403}
   - {fileID: 2935327263931220905}
+  - {fileID: 615890449630005921}
+  - {fileID: 8577238722265078619}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -4171,9 +4206,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mixer: {fileID: 24100000, guid: a9e5d729576b0a5478cec30207263369, type: 2}
-  masterSlider: {fileID: 0}
-  musicSlider: {fileID: 0}
-  sfxSlider: {fileID: 0}
+  masterSlider: {fileID: 5416001581478210317}
+  musicSlider: {fileID: 8909991077494825092}
+  sfxSlider: {fileID: 841255463228985571}
   preferSelector: 1
   resolutionSelector: {fileID: 0}
   resolutionDropdown: {fileID: 0}
@@ -6820,7 +6855,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 224962817517893130, guid: 7ea731f501442984589dad30e8f89c28, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 1814.515
+      value: 1152.405
       objectReference: {fileID: 0}
     - target: {fileID: 224962817517893130, guid: 7ea731f501442984589dad30e8f89c28, type: 3}
       propertyPath: m_AnchoredPosition.y

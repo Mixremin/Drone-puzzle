@@ -21,10 +21,10 @@ namespace _LevelSpecific
             Scene scene = SceneManager.GetActiveScene();
             switch (scene.buildIndex)
             {
-                case 1:
+                case 2:
                     CitySpawn();
                     break;
-                case 3:
+                case 4:
                     LobbySpawn();
                     break;
                 default:

@@ -10,8 +10,6 @@ namespace _Talkable
         [SerializeField]
         private TalkableNPC talkScript;
 
-        [SerializeField]
-        private GameObject afterInformantTrigger;
 
         private void Start()
         {
@@ -23,7 +21,6 @@ namespace _Talkable
         public void Interact()
         {
             talkScript.StartDialogue();
-            afterInformantTrigger.SetActive(true);
             SimpleInventory.instance.talkedToInformant = true;
             //Destroy(talkScript);
             Destroy(this);

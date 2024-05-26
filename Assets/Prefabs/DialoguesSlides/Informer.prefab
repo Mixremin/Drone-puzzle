@@ -65,8 +65,13 @@ MonoBehaviour:
   - {fileID: 8780739873621975826}
   - {fileID: 1460011365135717032}
   - {fileID: 6942720843862280697}
+  - {fileID: 7704286144616616440}
+  - {fileID: 2892087802084793760}
+  - {fileID: 7229026711638176924}
+  - {fileID: 6771608313825294049}
+  - {fileID: 1601842370747484264}
   slideStructs: []
-  playLast: 1
+  playLast: 0
   SlideshowStarted:
     m_PersistentCalls:
       m_Calls:
@@ -226,6 +231,22 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[3].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
       value: 
       objectReference: {fileID: 8300000, guid: e6f44b6fce71be34dbbd6d12cb3d3b8c, type: 3}
@@ -334,6 +355,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -390,6 +415,14 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -519,6 +552,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
   m_PrefabInstance: {fileID: 1418557900555721053}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7229026711638176924 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 1418557900555721053}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1703605622021219384
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -554,6 +598,22 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[3].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -667,6 +727,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 4
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -723,6 +787,18 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -834,6 +910,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -844,6 +924,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
   m_PrefabInstance: {fileID: 2095876930395192377}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7704286144616616440 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 2095876930395192377}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3027692704005954336
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -879,6 +970,18 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -1005,11 +1108,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 3
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+--- !u!114 &6771608313825294049 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 3027692704005954336}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &7043064523800203086 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
@@ -1046,6 +1164,14 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].replicSound
@@ -1211,6 +1337,26 @@ PrefabInstance:
       value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[3].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[4].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
       value: 
       objectReference: {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
@@ -1332,6 +1478,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 5
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1342,6 +1492,17 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
   m_PrefabInstance: {fileID: 6908470233991966817}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &2892087802084793760 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 6908470233991966817}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7045864838704178601
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1377,6 +1538,14 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
@@ -1496,11 +1665,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: WaitBefore
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+--- !u!114 &1601842370747484264 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 7045864838704178601}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!224 &3062037741223408071 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
@@ -1537,6 +1721,22 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[3].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -1648,6 +1848,10 @@ PrefabInstance:
     - target: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

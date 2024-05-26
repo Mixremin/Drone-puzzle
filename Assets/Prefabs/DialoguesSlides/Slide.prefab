@@ -184,12 +184,10 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: '
-
-'
+  m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
+  m_sharedMaterial: {fileID: -2553342967066845870, guid: 4d39e5c32f0d2304a96964d1da830a3f, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -304,20 +302,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   replicas:
-  - replicSound: {fileID: 8300000, guid: c61c7fb70a223ad4582bf23ad98b017f, type: 3}
+  - holdTime: 0
     subtitleText: woof
-  - replicSound: {fileID: 8300000, guid: 9d46f9a0e3e8be44aa2dc581bd6e0c97, type: 3}
+  - holdTime: 0
     subtitleText: 
-  - replicSound: {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
+  - holdTime: 0
     subtitleText: 
-  - replicSound: {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
+  - holdTime: 0
     subtitleText: 
-  - replicSound: {fileID: 8300000, guid: e6f44b6fce71be34dbbd6d12cb3d3b8c, type: 3}
+  - holdTime: 0
     subtitleText: 
-  - replicSound: {fileID: 8300000, guid: f8c14f2814b4b124a894a65c32c44987, type: 3}
+  - holdTime: 0
     subtitleText: 
-  - replicSound: {fileID: 8300000, guid: e6f44b6fce71be34dbbd6d12cb3d3b8c, type: 3}
+  - holdTime: 0
     subtitleText: 
   subtitleView: {fileID: 3679481622652537910}
-  audioSource: {fileID: 0}
   WaitBefore: 0

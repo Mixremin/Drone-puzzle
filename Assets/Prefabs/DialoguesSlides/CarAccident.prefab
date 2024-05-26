@@ -56,10 +56,8 @@ MonoBehaviour:
   slides:
   - {fileID: 4782771324252168778}
   - {fileID: 8780739873621975826}
-  - {fileID: 0}
-  - {fileID: 0}
   slideStructs: []
-  playLast: 1
+  playLast: 0
   SlideshowStarted:
     m_PersistentCalls:
       m_Calls:
@@ -217,6 +215,14 @@ PrefabInstance:
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[4].replicSound
@@ -379,6 +385,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}

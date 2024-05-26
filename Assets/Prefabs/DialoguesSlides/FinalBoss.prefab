@@ -58,9 +58,8 @@ MonoBehaviour:
   - {fileID: 4782771324252168778}
   - {fileID: 8780739873621975826}
   - {fileID: 1460011365135717032}
-  - {fileID: 0}
   slideStructs: []
-  playLast: 1
+  playLast: 0
   SlideshowStarted:
     m_PersistentCalls:
       m_Calls:
@@ -217,6 +216,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
@@ -384,6 +387,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[2].replicSound
       value: 
       objectReference: {fileID: 8300000, guid: e6f44b6fce71be34dbbd6d12cb3d3b8c, type: 3}
@@ -544,6 +551,22 @@ PrefabInstance:
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[0].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[1].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[2].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: replicas.Array.data[3].holdTime
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 4398192539194229213, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
       propertyPath: replicas.Array.data[3].replicSound
       value: 
       objectReference: {fileID: 8300000, guid: b16dc74b7376aca46bd0c6be96c940fa, type: 3}
@@ -667,17 +690,52 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: HoldTime
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 6953598849159309039}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: GoToMainMenu
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: _Items.cyberdog, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      propertyPath: AfterFadeOut.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 2590716440216731893, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 6953598849159309039}
   m_SourcePrefab: {fileID: 100100000, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
 --- !u!114 &1460011365135717032 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 8646088417285926337, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
   m_PrefabInstance: {fileID: 7187202957492944745}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
+  m_GameObject: {fileID: 4632517240751849372}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 2f00da263baf551459b0289242f9ec01, type: 3}
@@ -688,3 +746,21 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 5456528382069396590, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
   m_PrefabInstance: {fileID: 7187202957492944745}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &4632517240751849372 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2590716440216731893, guid: 7a2241a277783ce49ab298e4e2cc89db, type: 3}
+  m_PrefabInstance: {fileID: 7187202957492944745}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &6953598849159309039
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4632517240751849372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2bd51d521909c694b9012c438aaabdff, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  finalDialogue: {fileID: 0}

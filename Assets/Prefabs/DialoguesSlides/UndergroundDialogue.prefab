@@ -55,7 +55,7 @@ MonoBehaviour:
   slides:
   - {fileID: 1383554484916562676}
   slideStructs: []
-  playLast: 1
+  playLast: 0
   SlideshowStarted:
     m_PersistentCalls:
       m_Calls:
