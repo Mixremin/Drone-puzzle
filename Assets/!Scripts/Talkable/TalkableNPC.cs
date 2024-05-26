@@ -4,6 +4,7 @@ using Sirenix.OdinInspector;
 using System.Collections;
 using UI;
 using UnityEngine;
+using UnityEngine.Events;
 
 namespace _Talkable
 {
@@ -20,6 +21,8 @@ namespace _Talkable
         private bool mainInteraction = true;
 
         private SlideshowParent slideshowScript;
+
+        public UnityEvent OnDialogueStart;
 
         [Button]
         private void FindCanvas()
@@ -38,6 +41,7 @@ namespace _Talkable
 
         public void StartDialogue()
         {
+            OnDialogueStart?.Invoke();
             _ = StartCoroutine(StartSlideshow());
         }
 
