@@ -45,12 +45,14 @@ namespace _Managers
         public void FadeIn()
         {
             blackScreen.FadeIn(FadeInDuration);
+
         }
 
         [Button]
         public void FadeOut()
         {
             blackScreen.FadeOut(FadeOutDuration);
+
         }
     }
 }

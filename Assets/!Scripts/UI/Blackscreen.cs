@@ -1,4 +1,5 @@
-﻿using DG.Tweening;
+﻿using Config;
+using DG.Tweening;
 using Sirenix.OdinInspector;
 using UnityEngine;
 using UnityEngine.UI;
@@ -23,28 +24,28 @@ namespace _UI
         public void FadeIn(float duration)
         {
             //Locker.instance.LockAll();
-            Fade(1f, duration, () => { });
+            Fade(1f, duration, () => { Locker.instance.LockAll(); });
         }
 
 
         public void FadeOut(float duration)
         {
             //Locker.instance.InFPSLock();
-            Fade(0f, duration, () => { });
+            Fade(0f, duration, () => { Locker.instance.InFPSLock(); });
         }
 
         [Button]
         public void FadeIn()
         {
             //Locker.instance.LockAll();
-            Fade(1f, fadeInDuration, () => { });
+            Fade(1f, fadeInDuration, () => { Locker.instance.LockAll(); });
         }
 
         [Button]
         public void FadeOut()
         {
             //Locker.instance.InFPSLock();
-            Fade(0f, fadeOutDuration, () => { });
+            Fade(0f, fadeOutDuration, () => { Locker.instance.InFPSLock(); });
         }
 
         private void Fade(float endValue, float duration, TweenCallback onEnd)

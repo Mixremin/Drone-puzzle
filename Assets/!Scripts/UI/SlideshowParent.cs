@@ -44,6 +44,8 @@ namespace UI
         public UnityEvent SlideshowStarted;
         public UnityEvent SlideshowEnded;
 
+        private bool skipAll = false;
+
         private Image image;
         private Tween fadeTween;
 
@@ -55,6 +57,17 @@ namespace UI
             if (playOnAwake)
             {
                 StartSlideshow();
+            }
+        }
+
+        private void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.Space))
+            {
+                skipAll = true;
+                StopAllCoroutines();
+                SlideshowEnded?.Invoke();
+                Destroy(gameObject);
             }
         }
 
@@ -74,7 +87,10 @@ namespace UI
                     yield return new WaitForSeconds(0.5f);
                     foreach (Slide slide in slides)
                     {
-                        yield return ShowSlide(slide);
+                        if (!skipAll)
+                        {
+                            yield return ShowSlide(slide);
+                        }
                     }
 
                     yield return new WaitForSeconds(slides.Last().FadeTime * 2);
@@ -82,20 +98,22 @@ namespace UI
                 }
                 else
                 {
-                    if (image == null)
-                    {
-                        image = gameObject.AddComponent<Image>();
-                    }
+                    //    if (image == null)
+                    //    {
+                    //        image = gameObject.AddComponent<Image>();
+                    //    }
 
-                    image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
-                    foreach (SlideStruct slide in slideStructs)
-                    {
-                        yield return ShowSlide(slide);
-                    }
+                    //    image.color = new Color(image.color.r, image.color.g, image.color.b, 0);
+                    //    foreach (SlideStruct slide in slideStructs)
+                    //    {
+                    //        yield return ShowSlide(slide);
+                    //    }
 
 
-                    yield return new WaitForSeconds(slides.Last().FadeTime * 2);
-                    SlideshowEnded?.Invoke();
+                    //    yield return new WaitForSeconds(slides.Last().FadeTime * 2);
+                    //    SlideshowEnded?.Invoke();
+                    //}
+                    Debug.Log("Mode need improvement");
                 }
             }
         }
@@ -106,7 +124,7 @@ namespace UI
             yield return new WaitForSeconds(slide.WaitBefore);
             slide.FadeIn();
             yield return new WaitForSeconds(slide.HoldTime);
-            slide.FadeOut();
+
         }
 
         private IEnumerator ShowSlide(SlideStruct slide)

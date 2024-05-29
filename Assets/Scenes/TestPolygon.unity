@@ -3030,6 +3030,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   canvas: {fileID: 2054304444}
   phonePrefab: {fileID: 8632525667873900328, guid: 7f928e4f2e4b73147a92ee4fa5299520, type: 3}
+  audioSource: {fileID: 0}
 --- !u!135 &669203876
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5426,9 +5427,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 369ea28fa1cb0624c9218bc58c33263a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slideshowParent: {fileID: 1164088468888609048, guid: 08300e5da7da29b4c89c3c21a6ccb601, type: 3}
+  slideshowParent: {fileID: 1164088468888609048, guid: 8d65c29a79a8c4243893c0871d2b2a0e, type: 3}
   canvas: {fileID: 2054304444}
   mainInteraction: 1
+  OnDialogueStart:
+    m_PersistentCalls:
+      m_Calls: []
 --- !u!135 &1305161617
 SphereCollider:
   m_ObjectHideFlags: 0
