@@ -1,0 +1,248 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="NameAndType">
+  <Comment CommentText="">
+    <Position X="32.196" Y="3.848" Height="0.75" Width="2.525" />
+  </Comment>
+  <Comment CommentText="">
+    <Position X="12.663" Y="3.556" Height="0.75" Width="1.7" />
+  </Comment>
+  <Class Name="Player.FirstPersonLook">
+    <Position X="26.5" Y="5.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAEACAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\FirstPersonLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.FirstPersonMovement">
+    <Position X="22.25" Y="5.5" Width="3" />
+    <Members>
+      <Property Name="IsRunning" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAIAAACAoAAAAAAAAAAQAAAAAAADQBAAQAAAAABAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\FirstPersonMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.SwitchToDrone">
+    <Position X="17.5" Y="9.25" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>kgQYAAACAQAAAAAAAAIAAAAkAAAgAgABkAAAIAIAQEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\SwitchToDrone.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Player.Interaction">
+    <Position X="37.25" Y="23.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAQAAAAAAAAAAAAQAAgBAAABAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Interaction.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Crouch">
+    <Position X="17.5" Y="5.25" Width="3" />
+    <Members>
+      <Event Name="CrouchEnd" Hidden="true" />
+      <Event Name="CrouchStart" Hidden="true" />
+      <Property Name="IsCrouched" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AQAAAAAASAEEBAAhAAAEIAAAAAAAAAAIAEAAAACACAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Crouch.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.GroundCheck">
+    <Position X="22.25" Y="12.25" Width="3" />
+    <Members>
+      <Event Name="Grounded" Hidden="true" />
+      <Property Name="RaycastDistance" Hidden="true" />
+      <Property Name="RaycastOrigin" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAIIAAAAAAAAIAQAAAEADAAIAAAAAACAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\GroundCheck.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Jump">
+    <Position X="22.25" Y="9.25" Width="3" />
+    <Members>
+      <Event Name="Jumped" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>gAAIAAAAABAABAAAAAAAIAAAAAAAAAAAAAAAAQAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Jump.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="Player.Zoom">
+    <Position X="26.5" Y="8.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAEAgAAAECAAAAAAAAAAAAAAAACAAAAAAAAAEA=</HashCode>
+      <FileName>Assets\!Scripts\Player\Components\Zoom.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.DroneLook">
+    <Position X="30.75" Y="23.25" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAQIAAAEACAAAAAAAAAAAAAAAAAAAAAAAAQAEAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\DroneLook.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.ShootLaser">
+    <Position X="30.75" Y="26" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>QBQAAAAAhQhIAAAAAIAFAAAAMAAAAAAABIAACEQIAAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\ShootLaser.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Drone.InvisibleObjects">
+    <Position X="30.5" Y="31.5" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAgJAAAAIAAAAAAAAAAAAAAAAAAAAAICAAAAAAACAA=</HashCode>
+      <FileName>Assets\!Scripts\Drone\InvisibleObjects.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI.SlideshowParent">
+    <Position X="33.75" Y="23.25" Width="3.25" />
+    <Members>
+      <Property Name="Info" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="UI.SlideshowParent.SlideStruct" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\!Scripts\UI\SlideshowParent.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AASAAAAABCCQAAAAAAIgBAAQEAAAEEQgAABEAMAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\UI\SlideshowParent.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="UI.Slide">
+    <Position X="33.75" Y="28.5" Width="3.25" />
+    <Members>
+      <Property Name="Info" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AACAAAAgACCAQAAAAAABBAAYAAAAABAAAMAEAEAICAE=</HashCode>
+      <FileName>Assets\!Scripts\UI\Slide.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Dialogue.ChainSpeaker">
+    <Position X="33.75" Y="33.25" Width="3.25" />
+    <Members>
+      <Property Name="Info" Hidden="true" />
+    </Members>
+    <NestedTypes>
+      <Struct Name="_Dialogue.ChainSpeaker.Replica" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\!Scripts\Dialogue\ChainSpeaker.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Struct>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAQAAAAABAABAAAAAAAAAQAAAAAEIAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Dialogue\ChainSpeaker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Talkable.TalkableNPC">
+    <Position X="37.25" Y="27.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAAAAAAACJQAACgAQAQBAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Talkable\TalkableNPC.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Config.Locker">
+    <Position X="8" Y="7.25" Width="3.25" />
+    <Members>
+      <Property Name="CameraLocked" Hidden="true" />
+      <Property Name="InteractionLocked" Hidden="true" />
+      <Property Name="LockedByMenu" Hidden="true" />
+      <Property Name="MenuLocked" Hidden="true" />
+      <Property Name="MovementLocked" Hidden="true" />
+      <Property Name="ShootingLocked" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>ggABBAAAAAQAAAAgMAAIJAAACBAAAAkACAAAIAgAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Config\Locker.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Config.SimpleInventory">
+    <Position X="12.25" Y="7.25" Width="2.75" />
+    <Members>
+      <Property Name="canStartJapanGame" Hidden="true" />
+      <Property Name="hackerQuestPassed" Hidden="true" />
+      <Property Name="hasDrone" Hidden="true" />
+      <Property Name="japanGamePassed" Hidden="true" />
+      <Property Name="phoneUsed" Hidden="true" />
+      <Property Name="runnerPazzlePassed" Hidden="true" />
+      <Property Name="talkedToInformant" Hidden="true" />
+      <Property Name="toOfficeCardObtained" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>EAIAAGAgAAACAIAAAAIISAABAAAgAQAAAAAAQACwAAA=</HashCode>
+      <FileName>Assets\!Scripts\Config\SimpleInventory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="SingletonScriptableObject&lt;T&gt;">
+    <Position X="11" Y="5" Width="2.5" />
+    <Members>
+      <Property Name="instance" Hidden="true" />
+      <Property Name="LazyInstance" Hidden="true" />
+    </Members>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAABAAAAAAIIAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Common\SingletoneScriptableObject.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyMovement">
+    <Position X="41" Y="23" Width="3.25" />
+    <NestedTypes>
+      <Enum Name="EnemyMovement.EnemyState" Collapsed="true">
+        <TypeIdentifier>
+          <NewMemberFileName>Assets\!Scripts\Enemies\EnemyMovement.cs</NewMemberFileName>
+        </TypeIdentifier>
+      </Enum>
+    </NestedTypes>
+    <TypeIdentifier>
+      <HashCode>UAQEAgAAQAAAAAgEBAQAAAAAACAABgQBAQECCCABAEA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyMovement.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="EnemyStats">
+    <Position X="44.5" Y="7" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAACAAAAAAAAAAEAAAAAIAAAAoAQAAgAAAAAg=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyStats.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="EnemyRangeCombat">
+    <Position X="41" Y="29" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAkAAAAACAAAABAAAAAAQAAANAAAAIBAQAAAAAAAIA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\EnemyRangeCombat.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="_Enemies.Projectile">
+    <Position X="41" Y="32.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAACAAAAAAAAAAAAQAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Enemies\Projectile.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="_Items.IInteractable">
+    <Position X="37.25" Y="26" Width="2.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\Items\IInteractable.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="_LevelSpecific.IEnemy">
+    <Position X="44.5" Y="5.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Assets\!Scripts\LevelSpecific\IEnemy.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
