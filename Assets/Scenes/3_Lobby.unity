@@ -4204,7 +4204,7 @@ PrefabInstance:
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: glitchFX
       value: 
-      objectReference: {fileID: 106442810}
+      objectReference: {fileID: 1762583940}
     - target: {fileID: 4905773344993154859, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
       propertyPath: droneReticle
       value: 
@@ -25465,6 +25465,17 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!114 &1762583940 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 471616062258784736, guid: cdc556cb0b93be545a8007ed847f1171, type: 3}
+  m_PrefabInstance: {fileID: 240475322}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 172515602e62fb746b5d573b38a5fe58, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1765124211
 PrefabInstance:
   m_ObjectHideFlags: 0
