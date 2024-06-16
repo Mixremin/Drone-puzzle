@@ -124,7 +124,7 @@ namespace UI
             yield return new WaitForSeconds(slide.WaitBefore);
             slide.FadeIn();
             yield return new WaitForSeconds(slide.HoldTime);
-
+            slide.FadeOut();
         }
 
         private IEnumerator ShowSlide(SlideStruct slide)

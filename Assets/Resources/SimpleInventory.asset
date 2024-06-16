@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9eb248a8e4d7eda4bbe04ee686816e2d, type: 3}
   m_Name: SimpleInventory
   m_EditorClassIdentifier: 
-  _hasDrone: 1
-  _phoneUsed: 1
+  _hasDrone: 0
+  _phoneUsed: 0
   _talkedToInformant: 0
   _canStartJapanGame: 0
   _japanGamePassed: 0
